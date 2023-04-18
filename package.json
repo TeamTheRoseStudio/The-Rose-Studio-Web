@@ -3,17 +3,19 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "local-ssl-proxy --source 3010 --target 3000 --cert localhost/localhost.pem --key localhost/localhost-key.pem & nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.6.6",
+    "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18",
     "nuxt": "^3.4.1"
   },
   "dependencies": {
+    "@storyblok/nuxt": "^5.4.0",
     "flowbite": "^1.6.5"
   }
 }
