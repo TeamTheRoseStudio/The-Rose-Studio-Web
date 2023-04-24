@@ -2,13 +2,10 @@
   <header v-editable="blok" class="dark">
     <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-[#0E0E0E]">
       <div
-        class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        class="flex flex-wrap justify-between mx-auto items-center max-w-screen-xl"
       >
         <a href="https://flowbite.com" class="flex items-center">
-          <span
-            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-            >The Rose Studio</span
-          >
+          <img :src="blok.image.filename" alt="" class="max-h-20" />
         </a>
         <div class="flex items-center lg:order-2">
           <button
@@ -46,48 +43,18 @@
           </button>
         </div>
         <div
-          class="hidden justify-between  items-center w-full lg:flex lg:w-auto lg:order-1"
+          class="hidden items-center justify-end w-full lg:flex lg:w-auto lg:order-1"
           id="mobile-menu-2"
         >
           <ul
-            class="flex flex-col justify-items-end mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
           >
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
-                aria-current="page"
-                >Productos</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                >Soluciones</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                >Enterprise</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                >Planes</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                >Nosotros</a
-              >
-            </li>
+            <StoryblokComponent
+              v-for="blok_item in blok.list_item"
+              :key="blok_item._uid"
+              :blok="blok_item"
+            />
+            
           </ul>
         </div>
       </div>
@@ -95,10 +62,10 @@
   </header>
 </template>
 <script setup>
-import { initFlowbite } from 'flowbite';
+import { initFlowbite } from "flowbite";
 defineProps({ blok: Object });
 
-onMounted(()=> {
-  initFlowbite()
-})
+onMounted(() => {
+  initFlowbite();
+});
 </script>
