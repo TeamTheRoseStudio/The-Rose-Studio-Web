@@ -13,7 +13,7 @@ const prop = defineProps({ blok: Object });
 
 const styleObject = computed(() => {
   return {
-    "--body-color": prop.blok.pageColor.color,
+    "--body-color": prop.blok.pageColor?.color,
   };
 });
 </script>

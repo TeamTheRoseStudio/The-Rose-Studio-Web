@@ -9,7 +9,7 @@ const props = defineProps({ blok: Object });
 
 const styleObject = computed(() => {
   return {
-    "--background-color": props.blok.color.color,
+    "--background-color": props.blok.color?.color,
   };
 });
 </script>
