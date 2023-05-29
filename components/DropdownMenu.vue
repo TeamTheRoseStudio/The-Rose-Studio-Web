@@ -4,7 +4,7 @@
       :icon="['fas', 'bars']"
       style="color: #ffffff"
       size="xl"
-      class="cursor-pointer"
+      class="cursor-pointer me-5"
     />
   </button>
   <!-- Dropdown menu -->

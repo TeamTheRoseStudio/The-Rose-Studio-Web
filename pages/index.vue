@@ -25,36 +25,9 @@
       <a href="/" class="headerLink">Conversemos</a>
       <a href="/" class="headerLink">Somos The Rose</a>
     </div>
-    <div class="flex space-x-4">
-      <fontAwesomeIcon
-        :icon="['fas', 'bars']"
-        style="color: #ffffff"
-        size="xl"
-        class="hidden md:flex cursor-pointer"
-      />
-      <fontAwesomeIcon
-        :icon="['fas', 'bars']"
-        style="color: #ffffff"
-        size="xl"
-        class="hidden md:flex cursor-pointer"
-      />
-      <fontAwesomeIcon
-        :icon="['fas', 'bars']"
-        style="color: #ffffff"
-        size="xl"
-        class="hidden md:flex cursor-pointer"
-      />
-      <fontAwesomeIcon
-        :icon="['fas', 'bars']"
-        style="color: #ffffff"
-        size="xl"
-        class="hidden md:flex cursor-pointer"
-      />
-    </div>
   </div>
 </template>
 <script setup>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 defineProps({ blok: Object });
 const story = await useAsyncStoryblok("home", {
   version: "draft",
