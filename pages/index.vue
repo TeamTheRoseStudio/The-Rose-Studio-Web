@@ -1,6 +1,6 @@
 <template>
   <StoryblokComponent v-if="story" :blok="story.content" />
-  <hero></hero>
+  <VisualImageWithHeading></VisualImageWithHeading>
 </template>
 <script setup>
 defineProps({ blok: Object });
