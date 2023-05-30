@@ -1,49 +1,88 @@
 <template>
-  <section class="bg-dark ">
-    <div
-      class="grid max-w-screen-xl w-full lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
-    >
+  <section class="bg-dark gradient_bg_orange h-screen">
+    <div class="gradient_bg_purple">
       <div
-        class="lg:mt-0 col-span-full justify-end overflow-hidden relative lg:col-span-5 xs:ms-10 lg:flex"
+        class="w-full flex flex-col md:flex-row-reverse md:justify-between justify-end h-screen"
       >
-        <div class="ellipse-9 left-28 top-10 inset-0 w-[364px] h-[481px] absolute "></div>
-        <img src="/Recurso2.png" class="w-full" alt="mockup" />
-      </div>
-      <div class="mr-auto place-self-center lg:col-span-7">
-        <h1
-          class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+        <div
+          class="flex-col lg:mt-0 col-span-full justify-end flex overflow-hidden relative lg:col-span-5 xs:ms-10 lg:flex pt-12 pb-4 items-end md:items-center"
         >
-          Payments tool for software companies
-        </h1>
-        <p
-          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
-        >
-          From checkout to global sales tax compliance, companies around the
-          world use Flowbite to simplify their payment stack.
-        </p>
-        <a
-          href="#"
-          class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-        >
-          Get started
-          <svg
-            class="w-5 h-5 ml-2 -mr-1"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="hidden max-w-[210px] max-h-[45pxs] md:w-full bg-gradient-to-r from-[#8A2387] to-[#F26021] md:pr-5 md:inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
-            <path
-              fill-rule="evenodd"
-              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </a>
-        <a
-          href="#"
-          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-        >
-          Speak to Sales
+            <a
+              href="#"
+              class="px-5 py-3 text-sm font-medium text-center text-white"
+            >
+              Agenda una cita
+            </a>
+            <font-awesome-icon
+              :icon="['fass', 'comment-dots']"
+              style="color: #ffffff"
+              size="lg"
+              class=""
+            />
+          </div>
+          <img
+            src="/Recurso-2-big.png"
+            class="object-cover w-[300px] h-[310px] object-left md:w-[800px] md:h-[830px] mt-6"
+            alt="mockup"
+          />
+        </div>
+
+        <div class="px-10 pb-32 py-0 md:py-40 md:px-40">
+          <div class="flex flex-col space-y-2 md:space-y-8 pb-6 md:pb-14">
+            <h1
+              class="mb-4 text-4xl max-w-[300px] md:max-w-xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-white"
+            >
+              Tus ideas al
+            </h1>
+            <div class="flex space-x-3">
+              <h1
+                class="mb-4 text-4xl max-w-[300px] md:max-w-xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-white"
+              >
+                siguiente
+              </h1>
+              <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-[#8A2387] to-[#F26021]"
+              >
+                nivel
+              </h1>
+            </div>
+          </div>
+          <p
+            class="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+          >
+            En The Rose nos dedicamos a impulsar tu marca mediante soluciones
+            personalizadas de estrategia, contenido creativo y diseño
+            impactante, conectando con el mundo y llevándote al siguiente nivel.
+          </p>
+          <div
+            class="mt-4 ml-10 md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+          >
+            <a
+              href="#"
+              class="px-5 py-3 text-sm font-medium text-center text-white"
+            >
+              Despega tu proyecto
+            </a>
+            <font-awesome-icon
+              :icon="['fas', 'arrow-right']"
+              style="color: #ffffff"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative hidden md:flex">
+      <div class="absolute left-[950px] bottom-5">
+        <a href="#" class="flex space-x-3 cursor-pointer">
+          <font-awesome-icon
+            :icon="['fas', 'arrow-down']"
+            style="color: #ffffff"
+            class="mt-[6.5px]"
+          />
+          <p class="text-white text-lg">Descubre más</p>
         </a>
       </div>
     </div>
