@@ -5,7 +5,7 @@
         v-if="blok.type == 'normal'"
         type="button"
         :style="styleObject"
-        class="background-color shadow-lg hover-color text-color text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        class="background-color shadow-lg hover-color text-color text-white bg-blue-700  font-medium rounded-lg"
         :class="blok.size_button"
       >
         <div v-if="blok.left_icon.icon" class="inline-block ">
@@ -23,7 +23,7 @@
         v-if="blok.type == 'bottomNav'"
         type="button"
         :style="styleObject"
-        class="background-color shadow-lg hover-color text-color text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        class="background-color shadow-lg hover-color text-color text-white bg-blue-700 font-medium rounded-lg dark:bg-blue-600 focus:outline-none dark:focus:ring-blue-800"
         :class="blok.size_button"
       >
         <div v-if="blok.left_icon.icon" class="">
