@@ -32,43 +32,47 @@
       <li>
         <NuxtLink
           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-          ><div class="prose">Creación WEB</div></NuxtLink
+          ><div class="prose cursor-pointer">Creación WEB</div></NuxtLink
         >
       </li>
       <li>
         <NuxtLink
           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-          ><div class="prose">Imagen de marca</div></NuxtLink
+          ><div class="prose cursor-pointer">Imagen de marca</div></NuxtLink
         >
       </li>
       <li>
         <NuxtLink
           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-          ><div class="prose">Edición de video</div></NuxtLink
+          ><div class="prose cursor-pointer">Edición de video</div></NuxtLink
         >
       </li>
       <li>
         <NuxtLink
           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-          ><div class="prose">Posicionamiento SEO</div></NuxtLink
+          ><div class="prose cursor-pointer">Posicionamiento SEO</div></NuxtLink
         >
       </li>
       <li>
         <NuxtLink
           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-          ><div class="prose">Campañas publicitarias</div></NuxtLink
+          ><div class="prose cursor-pointer">
+            Campañas publicitarias
+          </div></NuxtLink
         >
       </li>
       <li>
         <NuxtLink
           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-          ><div class="prose">Copywriting</div></NuxtLink
+          ><div class="prose cursor-pointer">Copywriting</div></NuxtLink
         >
       </li>
       <li>
         <NuxtLink
           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-          ><div class="prose">Gestión de Redes Sociales</div></NuxtLink
+          ><div class="prose cursor-pointer">
+            Gestión de Redes Sociales
+          </div></NuxtLink
         >
       </li>
     </ul>
