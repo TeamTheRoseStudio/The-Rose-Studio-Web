@@ -9,8 +9,10 @@ const storyFooter = await useAsyncStoryblok("layout/footer", {
 </script>
 <template>
   <div>
-    <StoryblokComponent :blok="storyHeader.content" />
+    <!--HEADER-->
+    <!-- <StoryblokComponent :blok="storyHeader.content" /> -->
     <slot />
-    <StoryblokComponent :blok="storyFooter.content" />
+    <!--FOOTER-->
+    <!-- <StoryblokComponent :blok="storyFooter.content" /> -->
   </div>
 </template>

@@ -1,12 +1,13 @@
 <template>
-  <StoryblokComponent v-if="story" :blok="story.content" />
-  <VisualImageWithHeading></VisualImageWithHeading>
+  <FeatureListCards></FeatureListCards>
 </template>
 <script setup>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
 defineProps({ blok: Object });
-const story = await useAsyncStoryblok("home", {
-  version: "draft",
-});
+
 </script>
+<script setup>
+  
+</script>
+<style scoped>
+  
+</style>
