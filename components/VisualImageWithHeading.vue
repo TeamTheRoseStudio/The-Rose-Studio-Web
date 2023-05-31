@@ -60,14 +60,14 @@
     </div>
     <ClientOnly>
       <div class="flex items-center justify-center w-full bg-black">
-        <a href="#" class="flex space-x-3 cursor-pointer">
+        <NuxtLink to="#" class="flex space-x-3 cursor-pointer">
           <font-awesome-icon
             :icon="['fas', 'arrow-down']"
             style="color: #ffffff"
             class="mt-[6.5px]"
           />
           <p class="text-white text-lg">Descubre más</p>
-        </a>
+        </NuxtLink>
       </div>
     </ClientOnly>
   </section>

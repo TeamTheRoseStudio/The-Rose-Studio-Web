@@ -3,7 +3,10 @@
 </template>
 <script setup>
 defineProps({ blok: Object });
-const story = await useAsyncStoryblok("home", {
+definePageMeta({
+  layout: false, // Hace que en Storyblok no se duplique el header / footer
+});
+const story = await useAsyncStoryblok("layout/header", {
   version: "draft",
 });
 </script>

@@ -1,10 +1,6 @@
 <template>
-  <div>
-    <TopHeader class="sticky top-0 z-10" />
-    <Header />
-    <VisualImageWithHeading />
-    <FeatureListCards />
-  </div>
+  <VisualImageWithHeading />
+  <FeatureListCards />
 </template>
 <script setup>
 defineProps({ blok: Object });
