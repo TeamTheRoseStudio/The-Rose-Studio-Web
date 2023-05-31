@@ -15,7 +15,7 @@
           ></div>
         </div>
         <p
-          class="md:col-span-2 ms-10 text-start font-light text-gray-500 dark:text-gray-400 sm:text-xl"
+          class="md:col-span-2 md:ms-10 text-start font-light text-gray-500 dark:text-gray-400 sm:text-xl"
         >
           Nuestro portafolio de proyectos incluye una amplia gama de soluciones
           digitales personalizadas para diversas industrias. Desde estrategias

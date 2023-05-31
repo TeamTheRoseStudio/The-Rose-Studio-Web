@@ -1,5 +1,5 @@
 <template>
-  <FeatureListCards></FeatureListCards>
+  <FeatureListCards />
 </template>
 <script setup>
 defineProps({ blok: Object });
