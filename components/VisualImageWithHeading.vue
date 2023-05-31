@@ -61,14 +61,14 @@
     <div class="relative hidden xl:flex">
       <ClientOnly>
         <div class="absolute left-[880px] bottom-5">
-          <a href="#" class="flex space-x-3 cursor-pointer">
+          <NuxtLink to="#" class="flex space-x-3 cursor-pointer">
             <font-awesome-icon
               :icon="['fas', 'arrow-down']"
               style="color: #ffffff"
               class="mt-[6.5px]"
             />
             <p class="text-white text-lg">Descubre más</p>
-          </a>
+          </NuxtLink>
         </div>
       </ClientOnly>
     </div>

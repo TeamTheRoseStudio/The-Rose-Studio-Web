@@ -1,4 +1,5 @@
 <template>
+  <VisualImageWithHeading />
   <FeatureListCards />
 </template>
 <script setup>

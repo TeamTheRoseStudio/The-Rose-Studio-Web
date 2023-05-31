@@ -3,7 +3,7 @@
 </template>
 <script setup>
 defineProps({ blok: Object });
-const story = await useAsyncStoryblok("home", {
+const story = await useAsyncStoryblok("layout/header", {
   version: "draft",
 });
 </script>
