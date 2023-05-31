@@ -1,23 +1,11 @@
 <template>
   <section
-    class="bg-dark gradient_bg_orange h-screen md:mb-20 2xl:mb-12"
+    class="bg-dark gradient_bg_orange h-full md:mb-20 2xl:mb-12"
     v-editable="blok"
   >
     <div class="gradient_bg_purple">
-      <div
-        class="w-full flex flex-col lg:flex-row-reverse md:justify-between justify-end h-screen"
-      >
-        <div
-          class="flex-col lg:mt-0 justify-end flex md:flex pt-12 pb-4 items-end md:items-right"
-        >
-          <img
-            src="/Recurso-2-big.png"
-            class="object-cover w-[300px] h-[310px] object-left md:object-left md:w-[400px] md:h-[410px] lg:w-[800px] lg:h-[830px]"
-            alt="mockup"
-          />
-        </div>
-
-        <div class="px-10 md:px-20 pb-32 py-0 lg:py-40">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="px-10 md:px-20 pb-32 py-0 lg:py-40 order-2 lg:order-first">
           <div class="flex flex-col space-y-2 md:space-y-8 pb-6 md:pb-14">
             <h1
               class="mb-4 text-4xl max-w-[300px] md:max-w-xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-white"
@@ -59,10 +47,19 @@
             />
           </div>
         </div>
+        <div
+          class="flex-col lg:mt-0 justify-end flex md:flex pt-12 pb-4 items-end md:items-right order-1 lg:order-last"
+        >
+          <img
+            src="/Recurso-2-big.png"
+            class="object-cover w-[300px] h-[310px] object-left md:object-left md:w-[400px] md:h-[410px] lg:w-[800px] lg:h-[830px]"
+            alt="mockup"
+          />
+        </div>
       </div>
     </div>
     <ClientOnly>
-      <div class="flex items-center justify-center w-full bg-black">
+      <div class="lg:flex hidden items-center justify-center w-full"><!--TODO: Arreglar la caja, se corta el color-->
         <NuxtLink to="#" class="flex space-x-3 cursor-pointer">
           <font-awesome-icon
             :icon="['fas', 'arrow-down']"
