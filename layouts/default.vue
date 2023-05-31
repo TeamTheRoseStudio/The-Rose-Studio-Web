@@ -6,9 +6,13 @@ const storyHeader = await useAsyncStoryblok("layout/header", {
 const storyFooter = await useAsyncStoryblok("layout/footer", {
   version: "draft",
 });
+const stickyBanner = await useAsyncStoryblok("layout/sticky-banner", {
+  version: "draft",
+});
 </script>
 <template>
-  <StickyBanner />
+  <!--STICKY BANNER-->
+  <StoryblokComponent :blok="stickyBanner.content" />
   <!--STORYBLOK HEADER-->
   <StoryblokComponent :blok="storyHeader.content" />
   <!--DISPLAY CONTENT PAGE-->
