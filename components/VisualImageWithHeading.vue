@@ -7,25 +7,9 @@
         <div
           class="flex-col lg:mt-0 col-span-full justify-end flex overflow-hidden relative lg:col-span-5 xs:ms-10 lg:flex pt-12 pb-4 items-end md:items-center"
         >
-          <div
-            class="hidden max-w-[210px] max-h-[45pxs] md:w-full bg-gradient-to-r from-[#8A2387] to-[#F26021] md:pr-5 md:inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-          >
-            <a
-              href="#"
-              class="px-5 py-3 text-sm font-medium text-center text-white"
-            >
-              Agenda una cita
-            </a>
-            <font-awesome-icon
-              :icon="['fass', 'comment-dots']"
-              style="color: #ffffff"
-              size="lg"
-              class=""
-            />
-          </div>
           <img
             src="/Recurso-2-big.png"
-            class="object-cover w-[300px] h-[310px] object-left md:w-[800px] md:h-[830px] mt-6"
+            class="object-cover w-[300px] h-[310px] object-left md:w-[800px] md:h-[830px]"
             alt="mockup"
           />
         </div>
@@ -74,17 +58,19 @@
         </div>
       </div>
     </div>
-    <div class="relative hidden md:flex">
-      <div class="absolute left-[950px] bottom-5">
-        <a href="#" class="flex space-x-3 cursor-pointer">
-          <font-awesome-icon
-            :icon="['fas', 'arrow-down']"
-            style="color: #ffffff"
-            class="mt-[6.5px]"
-          />
-          <p class="text-white text-lg">Descubre más</p>
-        </a>
-      </div>
+    <div class="relative hidden xl:flex">
+      <ClientOnly>
+        <div class="absolute left-[880px] bottom-5">
+          <a href="#" class="flex space-x-3 cursor-pointer">
+            <font-awesome-icon
+              :icon="['fas', 'arrow-down']"
+              style="color: #ffffff"
+              class="mt-[6.5px]"
+            />
+            <p class="text-white text-lg">Descubre más</p>
+          </a>
+        </div>
+      </ClientOnly>
     </div>
   </section>
 </template>
