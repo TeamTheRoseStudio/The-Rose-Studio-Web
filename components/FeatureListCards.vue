@@ -29,7 +29,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3">
         <!--Card 1-->
         <div class="p-6">
-          <img src="https://placehold.co/230x236" alt="" />
+          <img src="https://placehold.co/230x236" class="w-full" alt="" />
           <h4
             class="my-3 text-xl font-poppins font-bold dark:text-white text-terciario"
           >
@@ -56,7 +56,7 @@
         </div>
         <!--Card 2-->
         <div class="p-6">
-          <img src="https://placehold.co/230x236" alt="" />
+          <img src="https://placehold.co/230x236" class="w-full" alt="" />
           <h4
             class="my-3 text-xl font-poppins font-bold dark:text-white text-terciario"
           >
@@ -83,7 +83,7 @@
         </div>
         <!--Card 3-->
         <div class="p-6">
-          <img src="https://placehold.co/230x236" alt="" />
+          <img src="https://placehold.co/230x236" class="w-full" alt="" />
           <h4
             class="my-3 text-xl font-poppins font-bold dark:text-white text-terciario"
           >
