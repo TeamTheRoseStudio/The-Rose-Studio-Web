@@ -1,7 +1,9 @@
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  
 </template>
 
 <script setup>
