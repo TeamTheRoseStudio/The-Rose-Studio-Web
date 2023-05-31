@@ -1,10 +1,13 @@
 <template>
-  <StoryblokComponent v-if="story" :blok="story.content" />
-  <VisualImageWithHeading></VisualImageWithHeading>
+  <FeatureListCards />
 </template>
 <script setup>
 defineProps({ blok: Object });
-const story = await useAsyncStoryblok("home", {
-  version: "draft",
-});
+
 </script>
+<script setup>
+  
+</script>
+<style scoped>
+  
+</style>

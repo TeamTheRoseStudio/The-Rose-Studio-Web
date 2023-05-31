@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  css: ["@fortawesome/fontawesome-svg-core/styles.css", "assets/css/input.css"],
+  css: ["@fortawesome/fontawesome-svg-core/styles.css", "assets/css/input.css", "assets/css/globals.css"],
   modules: ["@nuxtjs/tailwindcss", "@storyblok/nuxt"],
   storyblok: {
     accessToken: "OfBJYurD1JRpKVUsUP6TsAtt",

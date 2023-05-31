@@ -1,13 +1,9 @@
-<script setup lang="ts">
-definePageMeta({
-  // disable a default layout
-  layout: false,
-});
-const story = await useAsyncStoryblok("layout/header", {
-  version: "draft",
-});
-</script>
-
 <template>
   <StoryblokComponent v-if="story" :blok="story.content" />
 </template>
+<script setup>
+defineProps({ blok: Object });
+const story = await useAsyncStoryblok("home", {
+  version: "draft",
+});
+</script>
