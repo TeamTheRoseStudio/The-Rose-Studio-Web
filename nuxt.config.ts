@@ -30,4 +30,12 @@ export default defineNuxtConfig({
       baseURL: "https://a.storyblok.com/",
     },
   },
+  build: {
+    transpile: [
+      "@fortawesome/fontawesome-svg-core",
+      "@fortawesome/free-brands-svg-icons",
+      "@fortawesome/free-solid-svg-icons",
+      "@fortawesome/vue-fontawesome",
+    ],
+  },
 });

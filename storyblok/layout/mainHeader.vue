@@ -6,6 +6,7 @@
       <div>
         <nuxtImg
           provider="storyblok"
+          href="/"
           format="webp"
           width="97"
           height="50"

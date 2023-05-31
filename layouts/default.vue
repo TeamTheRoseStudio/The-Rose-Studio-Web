@@ -12,11 +12,12 @@ const stickyBanner = await useAsyncStoryblok("layout/sticky-banner", {
 </script>
 <template>
   <!--STICKY BANNER-->
-  <StoryblokComponent :blok="stickyBanner.content" />
-  <!--STORYBLOK HEADER-->
-  <StoryblokComponent :blok="storyHeader.content" />
-  <!--DISPLAY CONTENT PAGE-->
-  <slot />
-  <!--STORYBLOK FOOTER-->
-  <StoryblokComponent :blok="storyFooter.content" />
+    <StoryblokComponent :blok="stickyBanner.content" />
+    <!--STORYBLOK HEADER-->
+    <StoryblokComponent :blok="storyHeader.content" />
+    <!--DISPLAY CONTENT PAGE-->
+    <slot />
+    <!--STORYBLOK FOOTER-->
+    <StoryblokComponent :blok="storyFooter.content" />
+  
 </template>

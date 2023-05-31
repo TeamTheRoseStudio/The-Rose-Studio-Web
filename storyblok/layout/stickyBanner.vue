@@ -22,13 +22,14 @@
     </div>
     <div class="flex space-x-4">
       <div v-for="icono in props.blok.iconsCenter">
-        <font-awesome-icon
-          :key="icono.icon._uid"
-          :icon="icono.icon.icon"
-          size="lg"
-          style="color: #ffffff"
-          class="cursor-pointer"
-        />
+        <NuxtLink :key="icono.icon._uid" :to="icono?.link?.url" :target="icono.link.target">
+          <font-awesome-icon
+            :icon="`${icono.icon.type} ${icono.icon.icon} `"
+            size="lg"
+            style="color: #ffffff"
+            class="cursor-pointer"
+          />
+        </NuxtLink>
       </div>
     </div>
     <!--Botón-->
@@ -48,6 +49,6 @@
 </template>
 <script setup>
 const props = defineProps({ blok: Object });
-console.log(props.blok.iconsCenter[0].icon.icon)
+console.log(props.blok.iconsCenter[0].link);
 </script>
 <style scoped></style>
