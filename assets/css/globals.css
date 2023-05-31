@@ -1,5 +1,5 @@
 .headerLink {
-  @apply text-white/80 cursor-pointer font-rubik cursor-pointer;
+  @apply text-white/80 cursor-pointer font-rubik;
 }
 
 .gradient__bg {
