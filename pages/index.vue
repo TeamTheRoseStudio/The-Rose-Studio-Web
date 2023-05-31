@@ -1,11 +1,10 @@
 <template>
-  <!--STICKY BANNER-->
-  <VisualImageWithHeading2></VisualImageWithHeading2>
+  <StoryblokComponent v-if="story" :blok="story.content" />
   <FeatureListCards />
-
 </template>
 <script setup>
-
+const story = await useAsyncStoryblok("home", {
+  version: "draft",
+});
 </script>
-<script setup></script>
 <style scoped></style>

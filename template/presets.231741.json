@@ -1,0 +1,832 @@
+{
+  "presets": [
+    {
+      "id": 1778261,
+      "name": "Button 1",
+      "preset": {
+        "id": "",
+        "_uid": "da800b53-9e83-4fb8-bfef-d12f25d3372a",
+        "date": "",
+        "icon": "",
+        "link": {
+          "id": "e67f8613-7ae1-4415-8181-7efbc1a8bbbe",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": "guimar-news"
+        },
+        "size": "md",
+        "color": "info",
+        "image": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "focus": null,
+          "title": null,
+          "filename": "",
+          "copyright": null,
+          "fieldtype": "asset"
+        },
+        "index": "",
+        "shape": "",
+        "title": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Ver ",
+                  "type": "text"
+                },
+                {
+                  "text": "más",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "shadow": "md",
+        "buttons": [],
+        "padding": "8",
+        "aux_blok": [],
+        "subtitle": "",
+        "component": "aux_global",
+        "paragraph": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "text_color": "",
+        "description": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "second_paragraph": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      },
+      "component_id": 4012804,
+      "space_id": 231741,
+      "created_at": "2023-05-22T16:10:32.968Z",
+      "updated_at": "2023-05-22T16:10:32.968Z",
+      "image": "",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
+      "id": 1778262,
+      "name": "Button 2",
+      "preset": {
+        "id": "",
+        "_uid": "b2fedeab-b275-466a-b9c1-645f1cecdbd7",
+        "date": "",
+        "icon": "",
+        "link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "size": "",
+        "color": "info",
+        "image": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "focus": null,
+          "title": null,
+          "filename": "",
+          "copyright": null,
+          "fieldtype": "asset"
+        },
+        "index": "",
+        "shape": "",
+        "title": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 4
+              },
+              "content": [
+                {
+                  "text": "Cita previa",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "shadow": "",
+        "buttons": [
+          {
+            "id": "",
+            "_uid": "ee27af6f-60bd-4648-9573-d7f0a3579b0c",
+            "date": "",
+            "icon": "",
+            "link": {
+              "id": "7add5895-cb19-478e-9140-17fa6ec6d163",
+              "url": "",
+              "anchor": "",
+              "target": "_self",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "sobre-nosotros"
+            },
+            "size": "md",
+            "color": "secondary",
+            "image": {
+              "id": null,
+              "alt": null,
+              "name": "",
+              "focus": null,
+              "title": null,
+              "filename": "",
+              "copyright": null,
+              "fieldtype": "asset"
+            },
+            "index": "",
+            "shape": "",
+            "title": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Contactar",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "shadow": "",
+            "buttons": [],
+            "padding": "6",
+            "aux_blok": [],
+            "subtitle": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph"
+                }
+              ]
+            },
+            "component": "aux_global",
+            "paragraph": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph"
+                }
+              ]
+            },
+            "text_color": "dark",
+            "description": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph"
+                }
+              ]
+            },
+            "second_paragraph": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph"
+                }
+              ]
+            }
+          }
+        ],
+        "padding": "",
+        "aux_blok": [],
+        "subtitle": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "component": "aux_global",
+        "paragraph": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "text_color": "",
+        "description": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Queremos ayudarte en lo que podamos, ya sea con tus proyectos, emprendimientos, educación y mucho más. Contáctanos y agenda una cita con nosotros.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "second_paragraph": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      },
+      "component_id": 4012804,
+      "space_id": 231741,
+      "created_at": "2023-05-22T16:10:33.155Z",
+      "updated_at": "2023-05-22T16:10:33.155Z",
+      "image": "",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
+      "id": 1778266,
+      "name": "Button Example",
+      "preset": {
+        "_uid": "84672e96-136d-49de-8537-cfc30f7c364c",
+        "button": [
+          {
+            "_uid": "573478d6-aaa3-4846-8d47-c013775456ce",
+            "icon": "",
+            "link": {
+              "id": "e67f8613-7ae1-4415-8181-7efbc1a8bbbe",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "guimar-news"
+            },
+            "size": "sm",
+            "color": "success",
+            "image": {
+              "id": null,
+              "alt": null,
+              "name": "",
+              "focus": null,
+              "title": null,
+              "filename": "",
+              "copyright": null,
+              "fieldtype": "asset"
+            },
+            "index": "",
+            "title": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Ver ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "más",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "aux_blok": [],
+            "subtitle": "",
+            "component": "aux_global",
+            "paragraph": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph"
+                }
+              ]
+            },
+            "description": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph"
+                }
+              ]
+            },
+            "second_paragraph": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph"
+                }
+              ]
+            }
+          }
+        ],
+        "component": "buttonGeneral"
+      },
+      "component_id": 4012809,
+      "space_id": 231741,
+      "created_at": "2023-05-22T16:10:35.340Z",
+      "updated_at": "2023-05-22T16:10:35.340Z",
+      "image": "",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
+      "id": 1778263,
+      "name": "Button General",
+      "preset": {
+        "id": "",
+        "_uid": "ce0c6e0f-dd51-4098-8512-429db37e3710",
+        "icon": "",
+        "link": {
+          "id": "e67f8613-7ae1-4415-8181-7efbc1a8bbbe",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": "guimar-news"
+        },
+        "size": "sm",
+        "color": "info",
+        "image": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "focus": null,
+          "title": null,
+          "filename": "",
+          "copyright": null,
+          "fieldtype": "asset"
+        },
+        "index": "",
+        "shape": "rounded-1",
+        "title": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Ver ",
+                  "type": "text"
+                },
+                {
+                  "text": "evento",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "shadow": "md",
+        "buttons": [],
+        "padding": "6",
+        "aux_blok": [],
+        "subtitle": "",
+        "component": "aux_global",
+        "paragraph": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "description": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "second_paragraph": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      },
+      "component_id": 4012804,
+      "space_id": 231741,
+      "created_at": "2023-05-22T16:10:33.337Z",
+      "updated_at": "2023-05-22T16:10:33.337Z",
+      "image": "",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
+      "id": 1778264,
+      "name": "Button Rounded",
+      "preset": {
+        "_uid": "4a429710-b710-4fbd-b221-6b543d119fc1",
+        "icon": "",
+        "link": {
+          "id": "e67f8613-7ae1-4415-8181-7efbc1a8bbbe",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": "guimar-news"
+        },
+        "size": "sm",
+        "color": "success",
+        "image": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "focus": null,
+          "title": null,
+          "filename": "",
+          "copyright": null,
+          "fieldtype": "asset"
+        },
+        "index": "",
+        "title": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Ver ",
+                  "type": "text"
+                },
+                {
+                  "text": "más",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "aux_blok": [],
+        "subtitle": "",
+        "component": "aux_global",
+        "paragraph": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "description": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        "second_paragraph": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      },
+      "component_id": 4012804,
+      "space_id": 231741,
+      "created_at": "2023-05-22T16:10:33.918Z",
+      "updated_at": "2023-05-22T16:10:33.918Z",
+      "image": "",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
+      "id": 1778265,
+      "name": "Slider",
+      "preset": {
+        "_uid": "0ffaba3a-1c64-46ac-937f-4d0606f69cbd",
+        "icon": "",
+        "link": {
+          "id": "027da720-c461-479d-a90d-435993728ca3",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": "home"
+        },
+        "color": "primary",
+        "image": {
+          "id": 7307389,
+          "alt": "Eres más que un número",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "filename": "https://a.storyblok.com/f/199945/905x679/abfbc870a4/imagen-juventud.jpeg",
+          "copyright": "",
+          "fieldtype": "asset",
+          "is_external_url": false
+        },
+        "index": "",
+        "title": "Espacio Juvenil Güímar",
+        "aux_blok": [],
+        "subtitle": "",
+        "component": "aux_global",
+        "paragraph": "Somos el espacio para la Juventud en Güímar donde nos preocupamos de entregar formación y entretención para que tu puedas crecer en cada área de tu vida.",
+        "description": "",
+        "second_paragraph": ""
+      },
+      "component_id": 4012804,
+      "space_id": 231741,
+      "created_at": "2023-05-22T16:10:34.099Z",
+      "updated_at": "2023-05-22T16:10:34.099Z",
+      "image": "",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
+      "id": 1778267,
+      "name": "Slider Juventud Navigación",
+      "preset": {
+        "_uid": "258a29fb-dae1-4612-90ca-031f59084f16",
+        "slide": [
+          {
+            "_uid": "0ffaba3a-1c64-46ac-937f-4d0606f69cbd",
+            "icon": "",
+            "link": {
+              "id": "027da720-c461-479d-a90d-435993728ca3",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "home"
+            },
+            "color": "primary",
+            "image": {
+              "id": 7307389,
+              "alt": "Eres más que un número",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "filename": "https://a.storyblok.com/f/199945/905x679/abfbc870a4/imagen-juventud.jpeg",
+              "copyright": "",
+              "fieldtype": "asset",
+              "is_external_url": false
+            },
+            "index": "",
+            "title": "Espacio Juvenil Güímar",
+            "aux_blok": [],
+            "subtitle": "",
+            "component": "aux_global",
+            "paragraph": "Somos el espacio para la Juventud en Güímar donde nos preocupamos de entregar formación y entretenimiento para que tu puedas crecer en cada área de tu vida.",
+            "description": "",
+            "second_paragraph": ""
+          },
+          {
+            "_uid": "70a42660-78f6-4393-aedd-7dc31db0a75b",
+            "icon": "",
+            "link": {
+              "id": "27ef2bb7-ff5e-40b8-b074-d84878624bfa",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "pasarlo-bien"
+            },
+            "color": "info",
+            "image": {
+              "id": 7256834,
+              "alt": "Cena quedada",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "filename": "https://a.storyblok.com/f/199945/2000x1500/944e2c5f1b/cena-quedada.jpg",
+              "copyright": "",
+              "fieldtype": "asset",
+              "is_external_url": false
+            },
+            "index": "",
+            "title": "En Güímar lo pasas bien",
+            "aux_blok": [],
+            "subtitle": "",
+            "component": "aux_global",
+            "paragraph": "Estamos para crear espacios de recreación sanos y seguros dónde hacer amigos y pasarlo bien.",
+            "description": "",
+            "second_paragraph": ""
+          },
+          {
+            "_uid": "f3b91a41-dea7-46b6-8a0b-8b837d4c1f3e",
+            "icon": "",
+            "link": {
+              "id": "ac9e6062-ef07-467d-b13b-dbc50ef38fcd",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "se-lo-que-quieras"
+            },
+            "color": "success",
+            "image": {
+              "id": 7256838,
+              "alt": "Agenda de los viernes",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "filename": "https://a.storyblok.com/f/199945/2016x1512/190be9eca3/agenda-de-los-viernes-6.jpeg",
+              "copyright": "",
+              "fieldtype": "asset",
+              "is_external_url": false
+            },
+            "index": "",
+            "title": "Sé lo que tú quieras ser",
+            "aux_blok": [],
+            "subtitle": "",
+            "component": "aux_global",
+            "paragraph": "Te ayudamos a descubrir quién eres y tus valores a través de talleres, programas y eventos en comunidad.",
+            "description": "",
+            "second_paragraph": ""
+          },
+          {
+            "_uid": "bc4ba02a-0cd6-4252-a18c-49803ac44f81",
+            "icon": "",
+            "link": {
+              "id": "508cb7a5-99e9-4b22-b195-cebeb4fba65e",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "ser-independiente"
+            },
+            "color": "primary",
+            "image": {
+              "id": 7256846,
+              "alt": "Formación",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "filename": "https://a.storyblok.com/f/199945/2048x1532/549c16a7f7/la-agenda-de-los-viernes-1.jpeg",
+              "copyright": "",
+              "fieldtype": "asset",
+              "is_external_url": false
+            },
+            "index": "",
+            "title": "Comienza a ser independiente",
+            "aux_blok": [],
+            "subtitle": "",
+            "component": "aux_global",
+            "paragraph": "Te ayudamos a encontrar trabajo, a generar un autoempleo y con toda la información que necesitas para vivir independiente.",
+            "description": "",
+            "second_paragraph": ""
+          },
+          {
+            "_uid": "c9f0e54c-9406-46f3-bc86-32cdb3a7d3aa",
+            "icon": "",
+            "link": {
+              "id": "dc23feed-3253-45ca-b997-b9e98401aa7e",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "educacion"
+            },
+            "color": "info",
+            "image": {
+              "id": 7256828,
+              "alt": "Aprende cosas nuevas",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "filename": "https://a.storyblok.com/f/199945/1600x1200/b07394e376/aula-formacion.jpg",
+              "copyright": "",
+              "fieldtype": "asset",
+              "is_external_url": false
+            },
+            "index": "",
+            "title": "Aprende cosas nuevas",
+            "aux_blok": [],
+            "subtitle": "",
+            "component": "aux_global",
+            "paragraph": "Proporcionamos educación en distintas areas para que puedas desarrollar tus habilidades como persona.",
+            "description": "",
+            "second_paragraph": ""
+          },
+          {
+            "_uid": "19c4f83b-d7e9-4c3d-974a-5483e8d7cbc4",
+            "icon": "",
+            "link": {
+              "id": "f18be86a-b5b5-45db-9422-92ae1b2848e0",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "enterate-de-todo"
+            },
+            "color": "success",
+            "image": {
+              "id": 7256832,
+              "alt": "Actividades puntuales",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "filename": "https://a.storyblok.com/f/199945/1600x1197/e90d0ba96c/actvidades-puntuales.jpeg",
+              "copyright": "",
+              "fieldtype": "asset",
+              "is_external_url": false
+            },
+            "index": "",
+            "title": "Entérate de todo",
+            "aux_blok": [],
+            "subtitle": "",
+            "component": "aux_global",
+            "paragraph": "Infórmate de todas nuestras novedades, noticias, programas y convocatorias. Sé parte de lo que esta ocurriendo en Güímar.",
+            "description": "",
+            "second_paragraph": ""
+          },
+          {
+            "_uid": "15cedfed-d6e4-483f-817b-cb92200e576b",
+            "icon": "",
+            "link": {
+              "id": "7032a70b-592e-4bda-b09c-182067c1af2f",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "arrimate-a-la-casa"
+            },
+            "color": "success",
+            "image": {
+              "id": 7256833,
+              "alt": "Casa Juventud",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "filename": "https://a.storyblok.com/f/199945/2016x1134/9116785fbd/casa-juventud.jpg",
+              "copyright": "",
+              "fieldtype": "asset",
+              "is_external_url": false
+            },
+            "index": "",
+            "title": "Arrímate a la casa",
+            "aux_blok": [],
+            "subtitle": "",
+            "component": "aux_global",
+            "paragraph": "Nuestra razón de existencia eres tú. Por eso te invitamos a conocernos en nuestros horarios, ya sea presencial o virtual.",
+            "description": "",
+            "second_paragraph": ""
+          }
+        ],
+        "component": "heroSlider",
+        "index_active": "0"
+      },
+      "component_id": 4012836,
+      "space_id": 231741,
+      "created_at": "2023-05-22T16:10:40.775Z",
+      "updated_at": "2023-05-22T16:10:40.775Z",
+      "image": "",
+      "color": null,
+      "icon": null,
+      "description": null
+    }
+  ]
+}
