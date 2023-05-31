@@ -1,8 +1,11 @@
 <template>
+  <!--STICKY BANNER-->
+  <VisualImageWithHeading2></VisualImageWithHeading2>
   <FeatureListCards />
+
 </template>
 <script setup>
-defineProps({ blok: Object });
+
 </script>
 <script setup></script>
 <style scoped></style>

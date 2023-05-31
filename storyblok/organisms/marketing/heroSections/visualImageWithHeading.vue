@@ -1,5 +1,8 @@
 <template>
-  <section class="bg-dark gradient_bg_orange h-screen md:mb-20 2xl:mb-12">
+  <section
+    class="bg-dark gradient_bg_orange h-screen md:mb-20 2xl:mb-12"
+    v-editable="blok"
+  >
     <div class="gradient_bg_purple">
       <div
         class="w-full flex flex-col lg:flex-row-reverse md:justify-between justify-end h-screen"

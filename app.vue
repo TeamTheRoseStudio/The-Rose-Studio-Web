@@ -1,4 +1,5 @@
 <template>
+  <StoryblokComponent :blok="stickyBanner.content" class="sticky top-0 z-10" />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
@@ -8,5 +9,8 @@
 import { initFlowbite } from "flowbite";
 onMounted(() => {
   initFlowbite();
+});
+const stickyBanner = await useAsyncStoryblok("layout/sticky-banner", {
+  version: "draft",
 });
 </script>
