@@ -70,6 +70,10 @@ body {
   filter: blur(2px);
 }
 
+.headerLink {
+  @apply text-white/80 cursor-pointer font-rubik;
+}
+
 .gradient_bg_purple {
   @media only screen and (max-width: 600px) {
     background: radial-gradient(
@@ -78,9 +82,9 @@ body {
       rgba(229, 63, 50, 0) 100%
     );
   }
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 768px) {
     background: radial-gradient(
-      600px at -5% 45%,
+      600px at -5% 55%,
       rgba(152, 38, 123, 0.5) 1%,
       rgba(229, 63, 50, 0) 100%
     );
@@ -89,12 +93,12 @@ body {
 .gradient_bg_orange {
   @media only screen and (max-width: 600px) {
     background: radial-gradient(
-      350px at 120% 30%,
+      350px at 120% 35%,
       rgba(225, 54, 54, 0.6) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 768px) {
     background: radial-gradient(
       400px at 85% 55%,
       rgba(225, 54, 54, 0.6) 1%,
