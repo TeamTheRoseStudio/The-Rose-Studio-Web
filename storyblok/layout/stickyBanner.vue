@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="hidden lg:flex w-full bg-black h-20 sticky top-0 items-center justify-center lg:justify-between md:z-50 px-40 space-x-10 lg:space-x-0"
+    class="hidden lg:grid bg-black grid-cols-3 items-center place-items-center py-3"
   >
     <div class="flex space-x-4">
       <div>
@@ -20,9 +20,13 @@
         >{{ blok.whatsappPhone.url }}</NuxtLink
       >
     </div>
-    <div class="flex space-x-4">
+    <div class="flex space-x-4 2xl:pl-16">
       <div v-for="icono in props.blok.iconsCenter">
-        <NuxtLink :key="icono.icon._uid" :to="icono?.link?.url" :target="icono.link.target">
+        <NuxtLink
+          :key="icono.icon._uid"
+          :to="icono?.link?.url"
+          :target="icono.link.target"
+        >
           <font-awesome-icon
             :icon="`${icono.icon.type} ${icono.icon.icon} `"
             size="lg"
@@ -34,7 +38,7 @@
     </div>
     <!--Botón-->
     <div
-      class="hidden max-w-[210px] max-h-[45pxs] md:w-full bg-gradient-to-r from-[#8A2387] to-[#F26021] md:pr-5 xl:inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+      class="hidden max-w-[210px] max-h-[45pxs] md:w-full bg-gradient-to-r from-[#8A2387] to-[#F26021] md:pr-5 lg:inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
     >
       <a href="#" class="px-5 py-3 text-sm font-medium text-center text-white">
         Agenda una cita

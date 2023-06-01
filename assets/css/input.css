@@ -71,7 +71,7 @@ body {
 }
 
 .headerLink {
-  @apply text-white/80 cursor-pointer font-rubik;
+  @apply text-white/80 cursor-pointer font-rubik shrink-0;
 }
 
 .gradient_bg_purple {
