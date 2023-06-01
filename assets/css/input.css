@@ -106,3 +106,37 @@ body {
     );
   }
 }
+.gradient_bg_purple_services {
+  @media only screen and (max-width: 600px) {
+    background: radial-gradient(
+      350px at 90% 20%,
+      rgba(152, 38, 123, 0.5) 1%,
+      rgba(229, 63, 50, 0) 100%
+    );
+  }
+  @media only screen and (min-width: 768px) {
+    background: radial-gradient(
+      600px at 90% 20%,
+      rgba(152, 38, 123, 0.5) 1%,
+      rgba(229, 63, 50, 0) 100%
+    );
+  }
+}
+.gradient_bg_orange_services {
+  @media only screen and (min-width: 768px) {
+    background: radial-gradient(
+      400px at -5% 60%,
+      rgba(225, 54, 54, 0.5) 1%,
+      rgba(229, 63, 50, 0) 100%
+    );
+  }
+}
+.gradient_bg_orange_services_mobile {
+  @media only screen and (max-width: 767px) {
+    background: radial-gradient(
+      350px at -5% 60%,
+      rgba(225, 54, 54, 0.5) 1%,
+      rgba(229, 63, 50, 0) 100%
+    );
+  }
+}

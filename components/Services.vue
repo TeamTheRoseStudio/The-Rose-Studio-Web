@@ -1,7 +1,9 @@
 <template>
-  <section class="bg-dark gradient_bg_orange h-screen mt-14">
-    <div class="gradient_bg_purple h-screen">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+  <section class="bg-dark h-screen gradient_bg_orange_services">
+    <div class="gradient_bg_purple_services">
+      <div
+        class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 gradient_bg_orange_services_mobile"
+      >
         <div class="md:grid md:grid-cols-3 md:w-full text-center mb-8 lg:mb-16">
           <div>
             <h2
@@ -25,8 +27,10 @@
           </p>
         </div>
         <!--Services GRID -->
-        <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 pt-6">
-          <div class="space-y-4 mb-32 pr-0 lg:pr-20 ml-4">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 pl-2 pt-20 gap-y-20 md:gap-x-4 lg:gap-x-10"
+        >
+          <div class="space-y-4">
             <img src="/Icono-movil.png" />
             <h3 class="text-white text-3xl">Gestión de redes sociales</h3>
             <p class="text-white">
@@ -35,7 +39,7 @@
               resultados para aumentar tu presencia en linea
             </p>
             <div
-              class="md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              class="md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center"
             >
               <a
                 href="#"
@@ -49,16 +53,16 @@
               />
             </div>
           </div>
-          <div class="space-y-4 pr-20 ml-4">
+          <div class="space-y-4">
             <img src="/Icono-pantalla.png" />
-            <h3 class="text-white text-3xl">Gestión de redes sociales</h3>
+            <h3 class="text-white text-3xl">Diseño y desarrollo web</h3>
             <p class="text-white">
               Creamos y gestionamos perfiles en redes sociales, generación de
               contenido relevante, interacción con seguidores y análisis de
               resultados para aumentar tu presencia en linea
             </p>
             <div
-              class="md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              class="md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center"
             >
               <a
                 href="#"
@@ -72,16 +76,16 @@
               />
             </div>
           </div>
-          <div class="space-y-4 pr-20 ml-4">
+          <div class="space-y-4">
             <img src="/Icono-sobre.png" />
-            <h3 class="text-white text-3xl">Gestión de redes sociales</h3>
+            <h3 class="text-white text-3xl">Email marketing</h3>
             <p class="text-white">
-              Creamos y gestionamos perfiles en redes sociales, generación de
-              contenido relevante, interacción con seguidores y análisis de
-              resultados para aumentar tu presencia en linea
+              Creamos y gestionamos campañas de correo electrónico
+              personalizadas y automatizadas para fomentar la fidelización,
+              promover ofertas especiales y mantener a los clientes informados.
             </p>
             <div
-              class="md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              class="md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center"
             >
               <a
                 href="#"
@@ -95,16 +99,16 @@
               />
             </div>
           </div>
-          <div class="space-y-4 pr-20 ml-4">
+          <div class="space-y-4">
             <img src="/Icono-pincel.png" />
-            <h3 class="text-white text-3xl">Gestión de redes sociales</h3>
+            <h3 class="text-white text-3xl">Branding y diseño gráfico</h3>
             <p class="text-white">
-              Creamos y gestionamos perfiles en redes sociales, generación de
-              contenido relevante, interacción con seguidores y análisis de
-              resultados para aumentar tu presencia en linea
+              Desarrollamos tu identidad visual corporativa, diseño de
+              logotipos, materiales promocionales y empaques para fortalecer la
+              imagen de marca y generar reconocimiento.
             </p>
             <div
-              class="md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              class="md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center"
             >
               <a
                 href="#"
