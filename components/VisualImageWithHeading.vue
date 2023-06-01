@@ -1,20 +1,20 @@
 <template>
-  <section class="bg-dark gradient_bg_orange h-screen">
+  <section class="bg-dark gradient_bg_orange h-screen md:mb-20 2xl:mb-12">
     <div class="gradient_bg_purple">
       <div
-        class="w-full flex flex-col md:flex-row-reverse md:justify-between justify-end h-screen"
+        class="w-full flex flex-col lg:flex-row-reverse md:justify-between justify-end h-screen"
       >
         <div
-          class="flex-col lg:mt-0 col-span-full justify-end flex overflow-hidden relative lg:col-span-5 xs:ms-10 lg:flex pt-12 pb-4 items-end md:items-center"
+          class="flex-col lg:mt-0 justify-end flex md:flex pt-12 pb-4 items-end md:items-right"
         >
           <img
             src="/Recurso-2-big.png"
-            class="object-cover w-[300px] h-[310px] object-left md:w-[800px] md:h-[830px]"
+            class="object-cover w-[300px] h-[310px] object-left md:object-left md:w-[400px] md:h-[410px] lg:w-[800px] lg:h-[830px]"
             alt="mockup"
           />
         </div>
 
-        <div class="px-10 pb-32 py-0 md:py-40 md:px-40">
+        <div class="px-10 md:px-20 pb-32 py-0 lg:py-40">
           <div class="flex flex-col space-y-2 md:space-y-8 pb-6 md:pb-14">
             <h1
               class="mb-4 text-4xl max-w-[300px] md:max-w-xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-white"
@@ -58,20 +58,18 @@
         </div>
       </div>
     </div>
-    <div class="relative hidden xl:flex">
-      <ClientOnly>
-        <div class="absolute left-[880px] bottom-5">
-          <NuxtLink to="#" class="flex space-x-3 cursor-pointer">
-            <font-awesome-icon
-              :icon="['fas', 'arrow-down']"
-              style="color: #ffffff"
-              class="mt-[6.5px]"
-            />
-            <p class="text-white text-lg">Descubre más</p>
-          </NuxtLink>
-        </div>
-      </ClientOnly>
-    </div>
+    <ClientOnly>
+      <div class="flex items-center justify-center w-full bg-black">
+        <NuxtLink to="#" class="flex space-x-3 cursor-pointer">
+          <font-awesome-icon
+            :icon="['fas', 'arrow-down']"
+            style="color: #ffffff"
+            class="mt-[6.5px]"
+          />
+          <p class="text-white text-lg">Descubre más</p>
+        </NuxtLink>
+      </div>
+    </ClientOnly>
   </section>
 </template>
 <script setup></script>

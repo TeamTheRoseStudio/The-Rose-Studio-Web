@@ -91,17 +91,17 @@ body {
   }
 }
 .gradient_bg_orange {
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     background: radial-gradient(
-      350px at 120% 35%,
+      350px at 120% 32%,
       rgba(225, 54, 54, 0.6) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }
   @media only screen and (min-width: 768px) {
     background: radial-gradient(
-      400px at 85% 55%,
-      rgba(225, 54, 54, 0.6) 1%,
+      400px at 85% 40%,
+      rgba(225, 54, 54, 0.5) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }
