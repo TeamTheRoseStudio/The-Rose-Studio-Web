@@ -1,12 +1,10 @@
 <template>
   <section class="bg-white">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-      <div
-        class="md:grid md:grid-cols-3 md:w-full text-center mb-8 lg:mb-16"
-      >
+      <div class="md:grid md:grid-cols-3 md:w-full text-center mb-8 lg:mb-16">
         <div>
           <h2
-            class="mb-4 text-start text-4xl tracking-tight font-extrabold text-gray-900"
+            class="mb-4 text-start text-5xl tracking-tight font-extrabold text-gray-900"
           >
             Portfolio
           </h2>

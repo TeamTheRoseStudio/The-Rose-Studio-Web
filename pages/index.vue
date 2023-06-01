@@ -4,6 +4,7 @@
     <Header />
     <VisualImageWithHeading />
     <FeatureListCards />
+    <Services />
   </div>
 </template>
 <script setup>
