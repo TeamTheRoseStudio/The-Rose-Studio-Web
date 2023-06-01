@@ -15,9 +15,27 @@ export default defineNuxtConfig({
       },
     },
   },
-  css: ["@fortawesome/fontawesome-svg-core/styles.css", "assets/css/input.css", "assets/css/globals.css"],
-  modules: ["@nuxtjs/tailwindcss", "@storyblok/nuxt"],
+  css: [
+    "@fortawesome/fontawesome-svg-core/styles.css",
+    "assets/css/input.css",
+    "assets/css/globals.css",
+  ],
+  modules: ["@nuxtjs/tailwindcss", "@storyblok/nuxt", "@nuxt/image-edge"],
   storyblok: {
     accessToken: "OfBJYurD1JRpKVUsUP6TsAtt",
+  },
+  image: {
+    provider: "storyblok",
+    storyblok: {
+      baseURL: "https://a.storyblok.com/",
+    },
+  },
+  build: {
+    transpile: [
+      "@fortawesome/fontawesome-svg-core",
+      "@fortawesome/free-brands-svg-icons",
+      "@fortawesome/free-solid-svg-icons",
+      "@fortawesome/vue-fontawesome",
+    ],
   },
 });

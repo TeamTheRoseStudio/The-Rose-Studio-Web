@@ -7,8 +7,6 @@
     <Services />
   </div>
 </template>
-<script setup>
-defineProps({ blok: Object });
-</script>
+<script setup></script>
 <script setup></script>
 <style scoped></style>

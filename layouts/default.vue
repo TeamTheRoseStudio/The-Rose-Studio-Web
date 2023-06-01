@@ -6,11 +6,15 @@ const storyHeader = await useAsyncStoryblok("layout/header", {
 const storyFooter = await useAsyncStoryblok("layout/footer", {
   version: "draft",
 });
+
 </script>
 <template>
-  <div>
+  
+    <!--STORYBLOK HEADER-->
+    <StoryblokComponent :blok="storyHeader.content" />
+    <!--DISPLAY CONTENT PAGE-->
     <slot />
-    <!--FOOTER-->
-    <!-- <StoryblokComponent :blok="storyFooter.content" /> -->
-  </div>
+    <!--STORYBLOK FOOTER-->
+    <StoryblokComponent :blok="storyFooter.content" />
+  
 </template>

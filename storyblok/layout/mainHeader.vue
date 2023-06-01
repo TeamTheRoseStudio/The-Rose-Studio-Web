@@ -1,14 +1,18 @@
 <template>
-  <StoryblokComponent v-if="story" :blok="story.content" />
-  <div>
+  <div v-editable="blok">
     <div
       class="flex items-center justify-between h-[94px] w-full bg-black md:justify-evenly md:space-x-96 space-x-20 lg:space-x-10 px-10 md:px-0 mt-4 xl:space-x-[75px] lg:justify-center 2xl:justify-center 2xl:space-x-[345px]"
     >
       <div>
-        <img
-          src="Logo.png"
-          class="object-contain w-[97px] h-[50px] cursor-pointer"
-          alt="The Rose Studio Logo"
+        <nuxtImg
+          provider="storyblok"
+          href="/"
+          format="webp"
+          width="97"
+          height="50"
+          :src="blok.image.filename"
+          class="cursor-pointer"
+          :alt="blok.image.filename.alt"
         />
       </div>
       <div class="flex lg:hidden">
@@ -26,10 +30,5 @@
   </div>
 </template>
 <script setup>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
 defineProps({ blok: Object });
-const story = await useAsyncStoryblok("home", {
-  version: "draft",
-});
 </script>

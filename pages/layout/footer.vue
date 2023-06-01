@@ -1,7 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  // disable a default layout
-  layout: false,
+  layout: false, // Hace que en Storyblok no se duplique el header / footer
 });
 const story = await useAsyncStoryblok("layout/footer", {
   version: "draft",
