@@ -1,7 +1,7 @@
 <template>
   <div v-editable="blok">
     <div
-      class="flex items-center justify-between h-[94px] w-full bg-black md:justify-evenly md:space-x-96 space-x-20 lg:space-x-10 px-10 md:px-0 mt-4 xl:space-x-[75px] lg:justify-center 2xl:justify-center 2xl:space-x-[345px]"
+      class="grid grid-cols-2 lg:grid-cols-3 pb-4 pt-4 lg:pt-0 place-items-center"
     >
       <div>
         <nuxtImg
@@ -15,17 +15,16 @@
           :alt="blok.image.filename.alt"
         />
       </div>
-      <div class="flex lg:hidden">
+      <div class="flex lg:hidden pl-10">
         <DropdownMenu></DropdownMenu>
       </div>
-      <div class="space-x-10 hidden lg:flex lg:pl-10 2xl:pl-0">
+      <div class="space-x-10 hidden lg:flex">
         <a href="/" class="headerLink">Somos The Rose</a>
         <a href="/" class="headerLink">Consultoría</a>
         <DropdownMenuWithText></DropdownMenuWithText>
         <a href="/" class="headerLink">Precios</a>
         <a href="/" class="headerLink">Proyectos</a>
       </div>
-      <div class="hidden lg:flex w-0 xl:w-[240px] 2xl:w-[200px]"></div>
     </div>
   </div>
 </template>
