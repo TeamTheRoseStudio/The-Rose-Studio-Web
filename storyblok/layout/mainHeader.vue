@@ -3,7 +3,7 @@
     <div
       class="grid grid-cols-2 lg:grid-cols-3 pb-4 pt-4 lg:pt-0 place-items-center"
     >
-      <div>
+      <div class="lg:ms-10 lg:place-self-start">
         <nuxtImg
           provider="storyblok"
           href="/"
@@ -11,7 +11,7 @@
           width="97"
           height="50"
           :src="blok.image.filename"
-          class="cursor-pointer"
+          class="cursor-pointer pe-3"
           :alt="blok.image.filename.alt"
         />
       </div>
