@@ -6,13 +6,15 @@
     <div class="gradient_bg_purple">
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="px-10 md:px-20 pb-32 py-0 lg:py-40 order-2 lg:order-first">
-          <div class="flex flex-col space-y-2 md:space-y-8 pb-6 md:pb-14">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:space-y-8 pb-6 xl:space-x-4 md:pb-14"
+          >
             <div
               v-html="renderRichText(blok.title)"
-              class="mb-4 inline-block text-4xl max-w-[300px] md:max-w-xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-white"
+              class="leading-[50px] g- mb-4 inline-block text-4xl max-w-[300px] md:max-w-xl lg:min-w-[270px] font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white text-white"
             ></div>
             <h1
-              class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-[#8A2387] to-[#F26021]"
+              class="xl:mr-0 mb-4 lg:pt-2 xl:pt-5 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-[#8A2387] to-[#F26021]"
             >
               <!--TODO: Arreglar que se vea "nivel" en la misma linea-->
               {{ blok.featuredTitleText }}
@@ -23,7 +25,7 @@
             v-html="renderRichText(blok.paragraph)"
           ></div>
           <div
-            class="mt-4 ml-10 md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            class="mt-4 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
             <StoryblokComponent
               v-for="blok_item in blok.button"
