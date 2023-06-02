@@ -3,6 +3,7 @@
   
   <FeatureListCards />
   <Services />
+  <Testimonios />
 </template>
 <script setup>
 const story = await useAsyncStoryblok("home", {

@@ -59,7 +59,8 @@
       </div>
     </div>
     <ClientOnly>
-      <div class="lg:flex hidden items-center justify-center w-full"><!--TODO: Arreglar la caja, se corta el color-->
+      <div class="lg:flex hidden items-center justify-center w-full">
+        <!--TODO: Arreglar la caja, se corta el color-->
         <NuxtLink to="#" class="flex space-x-3 cursor-pointer">
           <font-awesome-icon
             :icon="['fas', 'arrow-down']"

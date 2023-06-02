@@ -1,7 +1,7 @@
 <template>
   <div v-editable="blok">
     <div
-      class="grid grid-cols-2 lg:grid-cols-3 pb-4 pt-4 lg:pt-0 place-items-center"
+      class="grid grid-cols-2 lg:grid-cols-3 pb-4 pt-10 lg:pt-0 place-items-center"
     >
       <div class="lg:ms-10 lg:place-self-start">
         <nuxtImg
