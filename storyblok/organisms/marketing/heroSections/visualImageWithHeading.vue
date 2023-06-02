@@ -7,16 +7,15 @@
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="px-10 md:px-20 pb-32 py-0 lg:py-40 order-2 lg:order-first">
           <div
-            class="flex flex-col lg:flex-row lg:items-center lg:space-y-8 pb-6 xl:space-x-4 md:pb-14"
+            class="flex items-end space-x-3 lg:space-x-0 lg:items-center lg:space-y-8 pb-6 xl:space-x-4 md:pb-14"
           >
             <div
               v-html="renderRichText(blok.title)"
-              class="leading-[50px] g- mb-4 inline-block text-4xl max-w-[300px] md:max-w-xl lg:min-w-[270px] font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white text-white"
+              class="leading-[50px] mb-1 lg:mb-4 inline-block text-3xl max-w-[300px] md:max-w-xl lg:min-w-[270px] font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white text-white"
             ></div>
             <h1
-              class="xl:mr-0 mb-4 lg:pt-2 xl:pt-5 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-[#8A2387] to-[#F26021]"
+              class="xl:mr-0 mb-3 md:mb-0 lg:pt-2 xl:pt-5 text-3xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-[#8A2387] to-[#F26021]"
             >
-              <!--TODO: Arreglar que se vea "nivel" en la misma linea-->
               {{ blok.featuredTitleText }}
             </h1>
           </div>
