@@ -6,6 +6,7 @@
       <div class="lg:ms-10 lg:place-self-start">
         <nuxtImg
           provider="storyblok"
+          :preload="true"
           href="/"
           format="webp"
           width="97"
