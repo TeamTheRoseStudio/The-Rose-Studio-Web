@@ -62,7 +62,7 @@
       </div>
     </div>
     <ClientOnly>
-      <div class="flex items-center justify-center w-full bg-black">
+      <div class="hidden lg:flex items-center justify-center w-full bg-black">
         <NuxtLink to="#" class="flex space-x-3 cursor-pointer">
           <font-awesome-icon
             :icon="['fas', 'arrow-down']"

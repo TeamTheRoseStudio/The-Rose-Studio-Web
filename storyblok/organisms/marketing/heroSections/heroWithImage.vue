@@ -1,6 +1,8 @@
 <template>
   <div v-editable="blok" class="relative isolate overflow-hidden bg-white">
-    <div class="mx-auto max-w-7xl px-6 py-10 sm:pb-32 lg:flex lg:py-12 lg:px-8 justify-center items-center">
+    <div
+      class="mx-auto max-w-7xl px-6 py-10 sm:pb-32 lg:flex lg:py-12 lg:px-8 justify-center items-center"
+    >
       <div
         class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8"
       >
@@ -36,7 +38,7 @@
         </div>
       </div>
       <div
-        class="mx-auto mt-10 max-w-2xl sm:mt-24 lg:ml-10 lg:mt-0 lg:mr-0 lg:max-w-none  xl:ml-32"
+        class="mx-auto mt-10 max-w-2xl sm:mt-24 lg:ml-10 lg:mt-0 lg:mr-0 lg:max-w-none xl:ml-32"
       >
         <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
           <div

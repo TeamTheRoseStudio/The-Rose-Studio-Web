@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-dark h-screen gradient_bg_orange_services">
+  <section class="bg-dark gradient_bg_orange_services mb-20 h-full">
     <div class="gradient_bg_purple_services">
       <div
         class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 gradient_bg_orange_services_mobile"
