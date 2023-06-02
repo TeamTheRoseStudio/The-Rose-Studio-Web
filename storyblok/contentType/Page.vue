@@ -18,11 +18,10 @@ const styleObject = computed(() => {
 });
 
 useHead({
-  titleTemplate: `${prop.blok.pageName} - The Rose Studio`
-})
+  titleTemplate: `${prop.blok.pageName} - The Rose Studio`,
+});
 
-definePageMeta({
-  name: "description",
+useSeoMeta({
   description: prop.blok.metatags?.description,
   og_description: prop.blok.metatags?.og_description,
   og_image: prop.blok.metatags?.og_image,

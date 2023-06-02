@@ -1,5 +1,6 @@
 <template>
   <StoryblokComponent v-if="story" :blok="story.content" />
+  
   <FeatureListCards />
   <Services />
   <Testimonios />
