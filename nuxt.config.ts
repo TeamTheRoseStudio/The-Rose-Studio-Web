@@ -13,6 +13,20 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "es",
       },
+      link: [
+        {
+          rel: "preload",
+          as: "font",
+          crossorigin: "anonymous",
+          href: "/fonts/Poppins-Regular.ttf",
+        },
+        {
+          rel: "preload",
+          as: "font",
+          crossorigin: "anonymous",
+          href: "/fonts/Rubik-Regular.ttf",
+        },
+      ],
     },
   },
   css: [
@@ -38,5 +52,4 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
     ],
   },
-  
 });
