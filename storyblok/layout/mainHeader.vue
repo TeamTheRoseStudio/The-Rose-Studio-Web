@@ -15,19 +15,25 @@
           :alt="blok.image.filename.alt"
         />
       </div>
-      <div class="flex lg:hidden pl-10">
-        <DropdownMenu></DropdownMenu>
+      <div class="flex lg:hidden pl-14">
+        <DropdownMenu :items="blok.headerItem"></DropdownMenu>
       </div>
       <div class="space-x-10 hidden lg:flex">
-        <a href="/" class="headerLink">Somos The Rose</a>
-        <a href="/" class="headerLink">Consultoría</a>
-        <DropdownMenuWithText></DropdownMenuWithText>
-        <a href="/" class="headerLink">Precios</a>
-        <a href="/" class="headerLink">Proyectos</a>
+        <div v-for="item in blok.headerItem" class="headerLink">
+          <NuxtLink :to="item.link.cached_url">
+            {{ item.text }}
+          </NuxtLink>
+        </div>
+        <StoryblokComponent
+          v-for="blok_item in blok.dropdown"
+          :key="blok_item._uid"
+          :blok="blok_item"
+        />
+        <!-- <DropdownMenuWithText></DropdownMenuWithText> -->
       </div>
     </div>
   </div>
 </template>
 <script setup>
-defineProps({ blok: Object });
+const props = defineProps({ blok: Object });
 </script>
