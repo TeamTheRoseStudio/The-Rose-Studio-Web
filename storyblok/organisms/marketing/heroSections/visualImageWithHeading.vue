@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="bg-dark gradient_bg_orange_hero h-full md:mb-20 2xl:mb-12"
-    v-editable="blok"
-  >
+  <section class="bg-dark gradient_bg_orange_hero h-full" v-editable="blok">
     <div class="gradient_bg_purple_hero">
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="px-10 md:px-20 pb-32 py-0 lg:py-40 order-2 lg:order-first">
@@ -57,11 +54,8 @@
           />
         </div>
       </div>
-    </div>
-    <ClientOnly>
       <div class="lg:flex hidden items-center justify-center w-full">
-        <!--TODO: Arreglar la caja, se corta el color-->
-        <NuxtLink to="#" class="flex space-x-3 cursor-pointer">
+        <NuxtLink to="#" class="flex space-x-3 cursor-pointer mb-6">
           <font-awesome-icon
             :icon="['fas', 'arrow-down']"
             style="color: #ffffff"
@@ -70,7 +64,7 @@
           <p class="text-white text-lg">Descubre más</p>
         </NuxtLink>
       </div>
-    </ClientOnly>
+    </div>
   </section>
 </template>
 <script setup>
