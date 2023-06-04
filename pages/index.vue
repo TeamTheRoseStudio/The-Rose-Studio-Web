@@ -5,6 +5,7 @@
   <Services />
   <Testimonios />
   <ContactForm />
+  <MainFooter />
 </template>
 <script setup>
 const story = await useAsyncStoryblok("home", {

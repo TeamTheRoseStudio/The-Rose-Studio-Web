@@ -1,9 +1,9 @@
 <template>
   <section
-    class="bg-dark gradient_bg_orange h-full md:mb-20 2xl:mb-12"
+    class="bg-dark gradient_bg_orange_hero h-full md:mb-20 2xl:mb-12"
     v-editable="blok"
   >
-    <div class="gradient_bg_purple">
+    <div class="gradient_bg_purple_hero">
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="px-10 md:px-20 pb-32 py-0 lg:py-40 order-2 lg:order-first">
           <div class="flex flex-col space-y-2 md:space-y-8 pb-6 md:pb-14">
