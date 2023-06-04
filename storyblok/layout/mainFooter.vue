@@ -10,7 +10,7 @@
       </p>
       <div class="grid grid-cols-3 place-items-center place-content-center">
         <p class="text-white">Somos The Rose</p>
-        <p class="text-white w-full text-center">Política de privacidad</p>
+        <p class="text-white w-full">Política de privacidad</p>
         <p class="text-white">Configuración de cookies</p>
       </div>
       <p class="text-white/50 text-lg">
