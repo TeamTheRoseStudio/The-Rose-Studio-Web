@@ -4,12 +4,12 @@
       <!-- TODO: poner padding-top a la sección de testimonios y checkear todos los paddings de la homepage. -->
       <div class="flex items-left md:items-center w-full flex-col mt-20">
         <h2
-          class="mb-4 text-4xl md:text-7xl tracking-tight font-extrabold text-left md:text-center text-white"
+          class="mb-4 text-5xl md:text-7xl tracking-tight font-extrabold text-left md:text-center text-white"
         >
           Démosle vida a tu idea
         </h2>
         <div
-          class="bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-[360px] md:w-[420px] mb-3"
+          class="bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-full md:w-[420px] mb-3"
         ></div>
       </div>
       <div
