@@ -3,11 +3,10 @@
     <div
       class="grid grid-cols-2 lg:grid-cols-3 pb-4 pt-10 lg:pt-0 place-items-center"
     >
-      <div class="lg:ms-10 lg:place-self-start">
+      <NuxtLink to="/" class="lg:ms-10 lg:place-self-start">
         <nuxtImg
           provider="storyblok"
           :preload="true"
-          href="/"
           format="webp"
           width="97"
           height="50"
@@ -15,7 +14,7 @@
           class="cursor-pointer pe-3"
           :alt="blok.image.filename.alt"
         />
-      </div>
+      </NuxtLink>
       <div class="flex lg:hidden pl-14">
         <DropdownMenu :items="blok.headerItem"></DropdownMenu>
       </div>

@@ -3,19 +3,31 @@
     <div
       class="grid grid-cols-1 place-items-center place-content-center py-20 gap-y-6 gradient_bg_orange_footer px-4"
     >
-      <img src="/Logo.png" alt="The Rose Studio Logo" class="mb-4" />
-      <p class="text-white/50">
-        Open-source library of over 400+ web components and interactive elements
-        built for better web
-      </p>
+      <NuxtImg
+        :src="blok.image.filename"
+        alt="The Rose Studio Logo"
+        class="mb-4"
+      />
       <div class="grid grid-cols-3 place-items-center place-content-center">
-        <p class="text-white">Somos The Rose</p>
-        <p class="text-white w-full text-center md:text-start">Política de privacidad</p>
-        <p class="text-white">Configuración de cookies</p>
+        <div
+          v-for="(item, index) in blok.links"
+          v-editable="item"
+          :key="item._uid"
+        >
+          <div
+            v-html="renderRichText(item.text)"
+            class="text-white"
+            :class="index == 1 ? 'w-full text-center md:text-start' : ''"
+          ></div>
+        </div>
       </div>
       <p class="text-white/50 text-lg">
-        © 2023 The Rose Studio. Todos los derechos reservados.
+        © {{ date }} {{ blok.text }}
       </p>
     </div>
   </div>
 </template>
+<script setup>
+defineProps({ blok: Object });
+const date = new Date().getFullYear();
+</script>

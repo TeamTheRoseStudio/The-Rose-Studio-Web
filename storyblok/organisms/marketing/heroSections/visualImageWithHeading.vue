@@ -45,19 +45,22 @@
         </div>
       </div>
       <div class="lg:flex hidden items-center justify-center w-full">
-        <NuxtLink to="#" class="flex space-x-3 cursor-pointer mb-6">
-          <font-awesome-icon
-            :icon="['fas', 'arrow-down']"
-            style="color: #ffffff"
-            class="mt-[6.5px]"
+        <div class="flex space-x-3 cursor-pointer mb-6">
+          <StoryblokComponent
+            v-for="blok_item in blok.endButton"
+            :key="blok_item._uid"
+            :blok="blok_item"
+            class="text-white text-lg"
           />
-          <p class="text-white text-lg">Descubre más</p>
-        </NuxtLink>
+        </div>
       </div>
     </div>
   </section>
 </template>
 <script setup>
 const props = defineProps({ blok: Object });
+const route = useRoute();
+
+console.log(route)
 </script>
 <style scoped></style>
