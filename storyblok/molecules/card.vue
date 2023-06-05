@@ -1,6 +1,13 @@
 <template>
   <div class="p-6">
-    <NuxtImg :src="blok.image.filename" class="w-full" alt="" />
+    <NuxtImg
+      provider="storyblok"
+      format="webp"
+      :preload="true"
+      :src="blok.image.filename"
+      class="w-full"
+      :alt="blok.image.alt"
+    />
     <div
       class="my-3 text-xl font-poppins font-bold dark:text-white text-terciario"
       v-html="renderRichText(blok.title)"

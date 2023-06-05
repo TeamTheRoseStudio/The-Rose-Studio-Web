@@ -30,7 +30,6 @@
   </section>
 </template>
 <script setup>
-import { faDivide } from '@fortawesome/free-solid-svg-icons';
 
 const props = defineProps({ blok: Object });
 </script>
