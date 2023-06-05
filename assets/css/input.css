@@ -58,23 +58,13 @@ body {
   }
 }
 
-.ellipse-9 {
-  position: absolute;
-  width: 364px;
-  height: 481px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(225, 54, 54, 0.5) 0%,
-    rgba(229, 63, 50, 0) 100%
-  );
-  filter: blur(2px);
-}
-
 .headerLink {
   @apply text-white/80 cursor-pointer font-rubik shrink-0;
 }
 
-.gradient_bg_purple {
+/* HERO SECTION BACKGROUND CIRCLE LIGHTS */
+
+.gradient_bg_purple_hero {
   @media only screen and (max-width: 600px) {
     background: radial-gradient(
       350px at 0% 70%,
@@ -82,6 +72,7 @@ body {
       rgba(229, 63, 50, 0) 100%
     );
   }
+
   @media only screen and (min-width: 768px) {
     background: radial-gradient(
       600px at -5% 55%,
@@ -90,7 +81,8 @@ body {
     );
   }
 }
-.gradient_bg_orange {
+
+.gradient_bg_orange_hero {
   @media only screen and (max-width: 767px) {
     background: radial-gradient(
       350px at 120% 32%,
@@ -98,6 +90,7 @@ body {
       rgba(229, 63, 50, 0) 100%
     );
   }
+
   @media only screen and (min-width: 768px) {
     background: radial-gradient(
       400px at 85% 40%,
@@ -106,6 +99,9 @@ body {
     );
   }
 }
+
+/* SERVICES SECTION BACKGROUND CIRCLE LIGHTS */
+
 .gradient_bg_purple_services {
   @media only screen and (max-width: 600px) {
     background: radial-gradient(
@@ -136,6 +132,43 @@ body {
     background: radial-gradient(
       350px at -5% 60%,
       rgba(225, 54, 54, 0.5) 1%,
+      rgba(229, 63, 50, 0) 100%
+    );
+  }
+}
+
+/* FOOTER SECTION BACKGROUND CIRCLE LIGHTS */
+.gradient_bg_purple_footer {
+  @media only screen and (max-width: 600px) {
+    background: radial-gradient(
+      350px at -10% 100%,
+      rgba(152, 38, 123, 0.3) 1%,
+      rgba(229, 63, 50, 0) 100%
+    );
+  }
+
+  @media only screen and (min-width: 768px) {
+    background: radial-gradient(
+      600px at 10% 155%,
+      rgba(152, 38, 123, 0.4) 1%,
+      rgba(229, 63, 50, 0) 100%
+    );
+  }
+}
+
+.gradient_bg_orange_footer {
+  @media only screen and (max-width: 600px) {
+    background: radial-gradient(
+      250px at 120% 55%,
+      rgba(225, 54, 54, 0.7) 1%,
+      rgba(229, 63, 50, 0) 100%
+    );
+  }
+
+  @media only screen and (min-width: 768px) {
+    background: radial-gradient(
+      400px at 85% 105%,
+      rgba(225, 54, 54, 0.6) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }
