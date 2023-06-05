@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6">
+  <div class="p-6" v-editable="blok">
     <NuxtImg
       provider="storyblok"
       format="webp"
@@ -13,7 +13,7 @@
       v-html="renderRichText(blok.title)"
     ></div>
     <div
-      class="p2-rubik font-light text-gray-500 dark:text-gray-400"
+      class="p2-rubik font-light prose text-gray-500 dark:text-gray-400"
       v-html="renderRichText(blok.paragraph)"
     ></div>
     <StoryblokComponent
@@ -29,6 +29,4 @@ defineProps({ blok: Object });
 </script>
 
 <style scoped>
-.prose {
-}
 </style>
