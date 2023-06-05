@@ -34,7 +34,12 @@ export default defineNuxtConfig({
     "assets/css/input.css",
     "assets/css/globals.css",
   ],
-  modules: ["@nuxtjs/tailwindcss", "@storyblok/nuxt", "@nuxt/image-edge"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@storyblok/nuxt",
+    "@nuxt/image-edge",
+    
+  ],
   storyblok: {
     accessToken: "OfBJYurD1JRpKVUsUP6TsAtt",
   },

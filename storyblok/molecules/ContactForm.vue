@@ -1,13 +1,12 @@
 <template>
-  <section class="bg-dark mb-20 h-full">
+  <section class="bg-dark mb-20 h-full" v-editable="blok">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 md:px-10">
       <!-- TODO: poner padding-top a la sección de testimonios y checkear todos los paddings de la homepage. -->
       <div class="flex items-left md:items-center w-full flex-col mt-20">
-        <h2
-          class="mb-4 text-5xl md:text-7xl tracking-tight font-extrabold text-left md:text-center text-white"
-        >
-          Démosle vida a tu idea
-        </h2>
+        <div
+          class="mb-4 prose text-5xl md:text-7xl tracking-tight font-extrabold text-left md:text-center text-white"
+          v-html="renderRichText(blok?.title)"
+        ></div>
         <div
           class="bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-full md:w-[420px] mb-3"
         ></div>
@@ -15,83 +14,25 @@
       <div
         class="w-full grid grid-cols-1 place-items-center place-content-center pt-14 pb-20"
       >
-        <h2
-          class="text-white text-3xl font-rubik leading-10 max-w-3xl text-center"
-        >
-          ¡Estamos aquí para ayudarte! Contáctanos hoy mismo y descubre cómo
-          podemos impulsar tu negocio.
-        </h2>
+        <div
+          class="text-white prose text-3xl font-rubik leading-10 max-w-3xl text-center"
+          v-html="renderRichText(blok?.paragraph)"
+        ></div>
       </div>
-      <form class="">
+      <form
+        method="post"
+        enctype="multipart/form-data"
+        :action="`https://formsubmit.co/${blok?.onSubmit.email}`"
+      >
         <div class="grid grid-cols-2 grid-rows-2 gap-x-10">
-          <div class="mb-6">
-            <label
-              for="base-input"
-              class="text-white block mb-2 text-sm font-medium"
-              >Nombre</label
-            >
-            <input
-              type="text"
-              id="base-input"
-              class="text-white border-[1px] border-gray-300/50 text-sm block w-full p-4 bg-black placeholder:text-gray-300/50"
-              placeholder="Bonnie"
-            />
-          </div>
-          <div class="mb-6">
-            <label
-              for="base-input"
-              class="text-white block mb-2 text-sm font-medium"
-              >Apellido</label
-            >
-            <input
-              type="text"
-              id="base-input"
-              class="text-white border-[1px] border-gray-300/50 text-sm block w-full p-4 bg-black placeholder:text-gray-300/50"
-              placeholder="Green"
-            />
-          </div>
-          <div class="mb-6">
-            <label
-              for="base-input"
-              class="text-white block mb-2 text-sm font-medium"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="base-input"
-              class="text-white border-[1px] border-gray-300/50 text-sm block w-full p-4 bg-black placeholder:text-gray-300/50"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="mb-6">
-            <label
-              for="base-input"
-              class="text-white block mb-2 text-sm font-medium"
-              >Teléfono</label
-            >
-            <input
-              type="number"
-              id="base-input"
-              class="text-white border-[1px] border-gray-300/50 text-sm block w-full p-4 bg-black placeholder:text-gray-300/50"
-              placeholder="+(12) 345 6789"
-            />
-          </div>
+          <StoryblokComponent
+            v-for="blok_item in blok?.inputs"
+            :key="blok_item._uid"
+            :blok="blok_item"
+            :class="blok_item.allWidth ? 'col-span-2' : ''"
+          />
         </div>
-        <!-- RICH TEXT -->
-
         <div class="flex flex-col items-start mb-6">
-          <div class="w-full my-4">
-            <label
-              for="base-input"
-              class="text-white block mb-2 text-sm font-medium"
-              >Cuéntanos tu idea</label
-            >
-            <textarea
-              id="message"
-              rows="4"
-              class="block px-2.5 h-48 w-full text-sm text-white bg-black border border-gray-300/50"
-            ></textarea>
-          </div>
           <div class="flex items-start mb-8 mt-4">
             <div class="flex items-center h-5">
               <input
@@ -107,19 +48,12 @@
               <a href="#" class="text-white">Términos de Servicio.</a></label
             >
           </div>
-          <button
-            type="submit"
-            class="bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center"
-          >
-            <a
-              href="#"
-              class="px-5 py-3 text-sm font-medium text-center text-white"
-            >
-              Enviar mensaje
-            </a>
-            <font-awesome-icon
-              :icon="['fas', 'arrow-right']"
-              style="color: #ffffff"
+          <button type="reset">
+            <StoryblokComponent
+              v-for="blok_item in blok?.button"
+              :key="blok_item._uid"
+              :blok="blok_item"
+              class="bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center text-white"
             />
           </button>
         </div>
@@ -172,7 +106,11 @@
         </div>
       </div>
     </div>
+    <!--TODO:EL FORMULARIO NO FUNCIONA-->
   </section>
 </template>
-<script setup></script>
+<script setup>
+import field from "vee-validate";
+const props = defineProps({ blok: Object });
+</script>
 <style scoped></style>
