@@ -20,7 +20,7 @@
         ></div>
       </div>
       <form
-        action="https://formsubmit.co/tatawuwo@mailgolem.com"
+        :action="`https://formsubmit.co/${blok.onSubmit.email}`"
         enctype="multipart/form-data"
         method="post"
       >

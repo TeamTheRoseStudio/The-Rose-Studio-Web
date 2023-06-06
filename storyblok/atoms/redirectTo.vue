@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="h-screen bg-white w-full text-center ">
-      <h1 class=" pt-14 text-3xl mb-1">{{ blok.title }} {{ contador }}</h1>
+      <div v-html="renderRichText(blok.title)" class="pt-14 text-3xl mb-1"></div>
+      <div class="text-xl mb-1">Serás redirigido en {{ contador }}</div>
       <div
         class="mb-10 sm:mx-auto bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-[190px]"
       ></div>
