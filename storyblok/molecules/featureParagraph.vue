@@ -7,7 +7,7 @@
       ></div>
     </div>
 
-    <div class="prose mx-4 " v-html="renderRichText(blok.paragraph)"></div>
+    <div class="prose mx-4 h-screen text-center max-w-none" :class="blok.paragraph == '' ? 'h-screen' : ''" v-html="renderRichText(blok.paragraph)"></div>
   </div>
 </template>
 <script setup>

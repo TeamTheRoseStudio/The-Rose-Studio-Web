@@ -17,6 +17,10 @@
     "nuxt": "^3.5.1"
   },
   "dependencies": {
+    "@formkit/icons": "^0.17.2",
+    "@formkit/nuxt": "^0.17.2",
+    "@formkit/themes": "^0.17.2",
+    "@formkit/vue": "^0.17.2",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -24,6 +28,7 @@
     "@nuxt/image": "^0.7.1",
     "@storyblok/nuxt": "^5.4.0",
     "flowbite": "^1.6.5",
+    "formkit": "^0.17.2",
     "nuxt-font-loader-strategy": "^1.1.10",
     "vee-validate": "^4.9.6"
   }

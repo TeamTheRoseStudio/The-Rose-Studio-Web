@@ -38,7 +38,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@storyblok/nuxt",
     "@nuxt/image-edge",
-    
+    "@formkit/nuxt",
   ],
   storyblok: {
     accessToken: "OfBJYurD1JRpKVUsUP6TsAtt",

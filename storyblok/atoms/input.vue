@@ -15,6 +15,7 @@
           class="text-white border-[1px] border-gray-300/50 text-sm block w-full p-4 bg-black placeholder:text-gray-300/50"
           :placeholder="blok.placeholder"
           :required="blok.required"
+          :name="blok.text"
         />
       </div>
     </div>
@@ -23,13 +24,14 @@
         <label
           for="base-input"
           class="text-white block mb-2 text-sm font-medium"
-          >Cuéntanos tu idea</label
+          >{{ blok.text }}</label
         >
         <textarea
           id="message"
           rows="4"
           :required="blok.required"
-          class=" block px-2.5 h-48 w-full text-sm text-white bg-black border border-gray-300/50"
+          :name="blok.text"
+          class="block px-2.5 h-48 w-full text-sm text-white bg-black border border-gray-300/50"
         ></textarea>
       </div>
     </div>
