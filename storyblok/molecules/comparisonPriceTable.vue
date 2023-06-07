@@ -11,11 +11,14 @@
         <CardPlansPrice />
       </div>
       <button
+        v-if="blok.type == 'normal'"
+        :style="styleObject"
+        :class="blok.size_button"
         type="button"
         class="hidden lg:flex justify-center items-center mx-auto font-medium text-white"
         data-collapse-toggle="detailed-pricing"
       >
-        Show Detailed Plan Comparison
+        {{ blok.title }}
         <svg
           class="ml-1 w-5 h-5"
           fill="currentColor"
@@ -35,11 +38,14 @@
           <div
             class="grid grid-cols-5 gap-x-16 p-4 text-sm font-medium text-white bg-black border-t border-b border-gray-200"
           >
-            <div class="flex items-center">Tailwind CSS code</div>
-            <div>Community Edition</div>
-            <div>Community Edition</div>
-            <div>Developer Edition</div>
-            <div>Designer Edition</div>
+            <div
+              v-html="renderRichText(blok.paragraph)"
+              class="flex items-center"
+            ></div>
+            <div v-html="renderRichText(blok.paragraph)"></div>
+            <div v-html="renderRichText(blok.paragraph)"></div>
+            <div v-html="renderRichText(blok.paragraph)"></div>
+            <div v-html="renderRichText(blok.paragraph)"></div>
           </div>
           <div
             class="grid grid-cols-5 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
@@ -178,8 +184,8 @@
           <div
             class="grid grid-cols-5 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
-              Marketing UI pre-order
+            <div  v-html="renderRichText(blok.paragraph)" class="text-gray-500 dark:text-gray-400">
+
             </div>
             <div>
               <svg
@@ -241,9 +247,8 @@
           <div
             class="grid grid-cols-5 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
-              E-commerce UI pre-order
-            </div>
+            <div  v-html="renderRichText(blok.paragraph)" class="text-gray-500 dark:text-gray-400">
+     </div>
             <div>
               <svg
                 class="w-6 h-6 text-red-500"
@@ -304,11 +309,11 @@
           <div
             class="grid grid-cols-5 gap-x-16 p-4 text-sm font-medium text-white bg-black border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-white"
           >
-            <div class="flex items-center">Figma design files</div>
-            <div>Community Edition</div>
-            <div>Community Edition</div>
-            <div>Developer Edition</div>
-            <div>Designer Edition</div>
+            <div  v-html="renderRichText(blok.paragraph)" class="flex items-center"></div>
+            <div  v-html="renderRichText(blok.paragraph)"></div>
+            <div  v-html="renderRichText(blok.paragraph)"></div>
+            <div  v-html="renderRichText(blok.paragraph)"></div>
+            <div  v-html="renderRichText(blok.paragraph)"></div>
           </div>
           <div
             class="grid grid-cols-5 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
@@ -510,8 +515,8 @@
           <div
             class="grid grid-cols-5 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
-              E-commerce UI pre-order
+            <div  v-html="renderRichText(blok.paragraph)" class="text-gray-500 dark:text-gray-400">
+           
             </div>
             <div>
               <svg
@@ -573,16 +578,16 @@
           <div
             class="grid grid-cols-5 gap-x-16 p-4 text-sm font-medium text-white bg-black border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-white"
           >
-            <div class="flex items-center">HUGO templates</div>
-            <div>Community Edition</div>
-            <div>Community Edition</div>
-            <div>Developer Edition</div>
-            <div>Designer Edition</div>
+            <div  v-html="renderRichText(blok.paragraph)" class="flex items-center"></div>
+            <div  v-html="renderRichText(blok.paragraph)"></div>
+            <div  v-html="renderRichText(blok.paragraph)"></div>
+            <div  v-html="renderRichText(blok.paragraph)"></div>
+            <div  v-html="renderRichText(blok.paragraph)"></div>
           </div>
           <div
             class="grid grid-cols-5 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">HUGO templates</div>
+            <div v-html="renderRichText(blok.paragraph)" class="text-gray-500 dark:text-gray-400"></div>
             <div>
               <svg
                 class="w-6 h-6 text-red-500"
@@ -643,8 +648,7 @@
           <div
             class="grid grid-cols-5 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
-              JSON data sources
+  
             </div>
             <div>
               <svg
@@ -707,49 +711,17 @@
             class="grid grid-cols-5 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
           >
             <div class="text-gray-500 dark:text-gray-400"></div>
-            <button
-              class="bg-gradient-to-r from-[#8A2387] to-[#F26021] inline-flex items-center justify-center mt-6 mx-10"
-            >
-              <a
-                href="#"
-                class="py-3 text-sm font-medium text-center text-white"
-              >
-                Buy now
-              </a>
-            </button>
-            <button
-              class="bg-gradient-to-r from-[#8A2387] to-[#F26021] inline-flex items-center justify-center mt-6 mx-10"
-            >
-              <a
-                href="#"
-                class="py-3 text-sm font-medium text-center text-white"
-              >
-                Buy now
-              </a>
-            </button>
-            <button
-              class="bg-gradient-to-r from-[#8A2387] to-[#F26021] inline-flex items-center justify-center mt-6 mx-10"
-            >
-              <a
-                href="#"
-                class="py-3 text-sm font-medium text-center text-white"
-              >
-                Buy now
-              </a>
-            </button>
-            <button
-              class="bg-gradient-to-r from-[#8A2387] to-[#F26021] inline-flex items-center justify-center mt-6 mx-10"
-            >
-              <a
-                href="#"
-                class="py-3 text-sm font-medium text-center text-white"
-              >
-                Buy now
-              </a>
-            </button>
+           <ButtonTRS/>
+           <ButtonTRS/>
+           <ButtonTRS/>
+           <ButtonTRS/>
+           <ButtonTRS/>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+<script setup>
+const props = defineProps({ blok: Object });
+</script>
