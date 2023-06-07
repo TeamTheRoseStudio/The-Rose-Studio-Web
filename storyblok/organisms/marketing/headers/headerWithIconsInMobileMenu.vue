@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white">
+  <!-- <header class="bg-white">
     <nav
       class="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-2"
       aria-label="Global"
@@ -249,24 +249,23 @@
         </div>
       </DialogPanel>
     </Dialog>
-  </header>
+  </header> -->
 </template>
 
 <script setup>
-import { ref } from "vue";
-import {
-  Dialog,
-  DialogPanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-} from "@headlessui/vue";
-import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
-import { ChevronDownIcon } from "@heroicons/vue/20/solid";
+// import { ref } from "vue";
+// import {
+//   Dialog,
+//   DialogPanel,
+//   Popover,
+//   PopoverButton,
+//   PopoverGroup,
+//   PopoverPanel,
+// } from "@headlessui/vue";
+// import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
+// import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 
+// const props = defineProps({ blok: Object });
 
-const props = defineProps({ blok: Object });
-
-const mobileMenuOpen = ref(false);
+// const mobileMenuOpen = ref(false);
 </script>
