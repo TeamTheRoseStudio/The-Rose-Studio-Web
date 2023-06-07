@@ -31,7 +31,8 @@
     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
       <li v-for="li in blok.dropdownItem">
         <NuxtLink
-          :to="li.link.cached_url"
+          :to="`/${li.link.cached_url}`"
+          :replace="true"
           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
           ><div class="prose cursor-pointer">{{ li.name }}</div></NuxtLink
         >
