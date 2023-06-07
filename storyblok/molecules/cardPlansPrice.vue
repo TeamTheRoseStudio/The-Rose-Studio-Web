@@ -44,7 +44,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span v-html="renderRichText(blok.span)"></span>
+        <span v-html="renderRichText(blok.paragraph)"></span>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -60,7 +60,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span v-html="renderRichText(blok.span)"></span>
+        <span v-html="renderRichText(blok.paragraph)"></span>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -76,8 +76,11 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span v-html="renderRichText(blok.span)"></span>
-        <span v-html="renderRichText(blok.span)" class="font-semibold"></span>
+        <span v-html="renderRichText(blok.paragraph)"></span>
+        <span
+          v-html="renderRichText(blok.paragraph)"
+          class="font-semibold"
+        ></span>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -93,7 +96,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span v-html="renderRichText(blok.span)"> </span>
+        <span v-html="renderRichText(blok.paragraph)"> </span>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -111,7 +114,7 @@
         </svg>
         <span
           class="line-through text-white/50"
-          v-html="renderRichText(blok.span)"
+          v-html="renderRichText(blok.paragraph)"
         >
         </span>
       </li>
@@ -131,7 +134,7 @@
         </svg>
         <span
           class="line-through text-white/50"
-          v-html="renderRichText(blok.span)"
+          v-html="renderRichText(blok.paragraph)"
         >
         </span>
       </li>
@@ -151,7 +154,7 @@
         </svg>
         <span
           class="line-through text-white/50"
-          v-html="renderRichText(blok.span)"
+          v-html="renderRichText(blok.paragraph)"
         ></span>
       </li>
     </ul>
