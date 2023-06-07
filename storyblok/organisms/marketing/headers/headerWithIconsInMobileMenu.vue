@@ -265,6 +265,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 
+
 const props = defineProps({ blok: Object });
 
 const mobileMenuOpen = ref(false);
