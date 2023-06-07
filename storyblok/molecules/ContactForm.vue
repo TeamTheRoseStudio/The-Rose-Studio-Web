@@ -49,7 +49,7 @@
               <input
                 type="hidden"
                 name="_autoresponse"
-                value="Gracias por enviarnos un correo electrónico. En breve nos pondremos en contacto contigo."
+                value="Gracias por contactar con The Rose Studio. En breve nos pondremos en contacto contigo."
               />
               <input type="hidden" name="_next" value="https://localhost:3010/gracias" />
               <!--TODO: Cambiar la pagina a done será redirigido-->

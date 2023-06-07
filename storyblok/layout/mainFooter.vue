@@ -9,17 +9,18 @@
         class="mb-4"
       />
       <div class="grid grid-cols-3 place-items-center place-content-center">
-        <div
+        <NuxtLink
           v-for="(item, index) in blok.links"
           v-editable="item"
           :key="item._uid"
+          :to="`/${item.link.cached_url}`"
         >
           <div
             v-html="renderRichText(item.text)"
             class="text-white"
             :class="index == 1 ? 'w-full text-center md:text-start' : ''"
           ></div>
-        </div>
+        </NuxtLink>
       </div>
       <p class="text-white/50 text-lg">
         © {{ date }} {{ blok.text }}
