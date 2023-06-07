@@ -1,0 +1,3 @@
+<template>
+    <TitleWithUnderline/>
+</template>
