@@ -169,5 +169,7 @@
     <ComparisonPriceTable />
   </section>
 </template>
-<script setup></script>
+<script setup>
+const props = defineProps({blok: Object})
+</script>
 <style scoped></style>
