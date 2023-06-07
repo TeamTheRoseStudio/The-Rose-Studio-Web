@@ -32,7 +32,7 @@
         </button>
       </div>
       <div class="order-1 md:order-2">
-        <img src="/services-picture.png" alt="Foto de Sección de Servicios" />
+        <img src="/services-photo.png" alt="Foto de Sección de Servicios" />
       </div>
     </div>
     <div class="lg:flex hidden items-center justify-center w-full mt-24">
