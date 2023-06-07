@@ -1,0 +1,41 @@
+<template>
+  <section class="gradient_bg_purple_hero h-full py-20 px-6">
+    <TitleWithUnderline />
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 w-full place-content-center place-items-center mt-20 gap-y-10"
+    >
+      <div class="order-2 md:order-1">
+        <p
+          v-html="renderRichText(blok.paragraph)"
+          class="prose max-w-xl mb-6 font-rubik text-white lg:mb-8 md:text-lg lg:text-xl"
+        ></p>
+        <ButtonTRS />
+      </div>
+      <div class="order-1 md:order-2">
+        <NuxtImg
+          provider="storyblok"
+          :preload="true"
+          format="webp"
+          :src="blok.image.filename"
+          :alt="blok.image.alt"
+        />
+      </div>
+    </div>
+    <div class="lg:flex hidden items-center justify-center w-full mt-24">
+      <NuxtLink to="#" class="flex space-x-3 cursor-pointer mb-6">
+        <font-awesome-icon
+          :icon="['fas', 'arrow-down']"
+          style="color: #ffffff"
+          class="mt-[6.5px]"
+        />
+        <p
+          v-html="renderRichText(blok.paragraph)"
+          class="text-white text-lg"
+        ></p>
+      </NuxtLink>
+    </div>
+  </section>
+</template>
+<script setup>
+const props = defineProps({ blok: Object });
+</script>
