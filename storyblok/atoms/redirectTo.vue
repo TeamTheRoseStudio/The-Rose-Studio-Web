@@ -12,7 +12,7 @@
 <script setup>
 const props = defineProps({ blok: Object });
 
-const contador = ref(7); // Inicializar el contador en 5 segundos
+const contador = ref(props.blok.seconds); // Inicializar el contador en 5 segundos
 const router = useRouter();
 
 onMounted(() => {
