@@ -1,9 +1,7 @@
 <template>
   <VisualImageWithHeadingAndText />
   <HowWeDevelopYourIdea />
-  <section>
-    <ComparisonPriceTable />
-  </section>
+  <ComparisonPriceTable />
 </template>
 <script setup>
 const props = defineProps({ blok: Object });
