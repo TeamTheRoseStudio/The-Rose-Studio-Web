@@ -9,4 +9,13 @@ definePageMeta({
 const stickyBanner = await useAsyncStoryblok("layout/sticky-banner", {
   version: "draft",
 });
+
+useHead({
+  meta: [
+    {
+      name: "robots",
+      content: "noindex",
+    },
+  ],
+});
 </script>
