@@ -1,6 +1,10 @@
 <template>
   <section class="gradient_bg_purple_hero h-full py-20 px-6">
-    <TitleWithUnderline />
+    <StoryblokComponent
+      v-for="blok_item in "
+      :key="blok_item._uid"
+      :blok="blok_titleWithUnderline"
+    />
     <div
       class="grid grid-cols-1 md:grid-cols-2 w-full place-content-center place-items-center mt-20 gap-y-10"
     >
@@ -9,7 +13,11 @@
           v-html="renderRichText(blok.paragraph)"
           class="prose max-w-xl mb-6 font-rubik text-white lg:mb-8 md:text-lg lg:text-xl"
         ></p>
-        <ButtonTRS />
+        <StoryblokComponent
+          v-for="blok_item in "
+          :key="blok_item._uid"
+          :blok="blok_buttonTRS"
+        />
       </div>
       <div class="order-1 md:order-2">
         <NuxtImg
@@ -29,7 +37,7 @@
           class="mt-[6.5px]"
         />
         <p
-          v-html="renderRichText(blok.paragraph)"
+          v-html="renderRichText(blok.paragraph2)"
           class="text-white text-lg"
         ></p>
       </NuxtLink>
