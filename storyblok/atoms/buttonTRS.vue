@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="blok.link">
+  <NuxtLink v-editable="blok" :to="blok.link.cached_url">
     <button
       v-if="blok.type == 'normal'"
       type="button"

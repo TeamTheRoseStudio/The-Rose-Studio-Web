@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white h-full py-20 px-4 lg:px-48">
+  <section class="bg-white h-full py-20 px-4 lg:px-48" v-editable="blok">
     <div>
       <h2
         v-html="renderRichText(blok.title)"
@@ -12,14 +12,11 @@
     <div
       class="grid grid-cols-1 md:grid-cols-2 place-items-start place-content-center mt-20 gap-20"
     >
-      <CardHowWeDevelopYourIdea />
-      <CardHowWeDevelopYourIdea />
-      <CardHowWeDevelopYourIdea />
-      <CardHowWeDevelopYourIdea />
-      <CardHowWeDevelopYourIdea />
-      <CardHowWeDevelopYourIdea />
-      <CardHowWeDevelopYourIdea />
-      <CardHowWeDevelopYourIdea />
+      <StoryblokComponent
+        v-for="blok_item in blok.cardHowWeDevelopYourIdea"
+        :key="blok_item._uid"
+        :blok="blok_item"
+      />
     </div>
   </section>
 </template>

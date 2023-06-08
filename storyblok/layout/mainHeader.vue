@@ -20,7 +20,7 @@
       </div>
       <div class="space-x-10 hidden lg:flex">
         <div v-for="item in blok.headerItem" class="headerLink">
-          <NuxtLink :to="item.link.cached_url">
+          <NuxtLink :to="`/${item.link.cached_url}`">
             {{ item.text }}
           </NuxtLink>
         </div>

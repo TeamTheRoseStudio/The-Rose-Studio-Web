@@ -1,42 +1,13 @@
-# Nuxt 3 Minimal Starter
+# The Rose Studio Web
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### This project is made with `Nuxt 3`, `Tailwind CSS` and `Storyblok`.
 
-## Setup
+Read the [`package.json`](./package.json) for more details.
 
-Make sure to install the dependencies:
+To deploy on https://localhost:3000 use: `npm run dev`
 
-```bash
-# yarn
-yarn install
+To deploy on Netlify use this command: `npm run generate`
 
-# npm
-npm install
+DEPLOY VARIABLES: STORYBLOK_TOKEN
 
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Storyblok documentation:
