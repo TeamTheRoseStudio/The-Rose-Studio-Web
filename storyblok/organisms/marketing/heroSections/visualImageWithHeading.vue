@@ -1,5 +1,9 @@
 <template>
-  <section class="bg-dark gradient_bg_orange_hero h-full" v-editable="blok">
+  <section
+    ref="divPadre"
+    class="bg-dark gradient_bg_orange_hero h-full"
+    v-editable="blok"
+  >
     <div class="gradient_bg_purple_hero">
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="px-10 md:px-20 pb-32 py-0 lg:py-40 order-2 lg:order-first">
@@ -51,6 +55,7 @@
             :key="blok_item._uid"
             :blok="blok_item"
             class="text-white text-lg"
+            @click="irADiv"
           />
         </div>
       </div>
@@ -59,7 +64,12 @@
 </template>
 <script setup>
 const props = defineProps({ blok: Object });
-
-
+const divPadre = ref(null);
+const irADiv = () => {
+  const divDestino = divPadre.value.nextElementSibling;
+  if (divDestino) {
+    divDestino.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
 <style scoped></style>
