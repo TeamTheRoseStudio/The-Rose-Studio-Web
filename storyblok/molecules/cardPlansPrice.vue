@@ -1,26 +1,27 @@
 <template>
   <div
+    v-editable="blok"
     class="flex flex-col p-4 lg:p-6 max-w-lg text-center text-white bg-dark border border-white shadow-sm xl:p-8"
   >
-    <h3
+    <div
       v-html="renderRichText(blok.title)"
       class="mb-4 text-2xl font-semibold"
-    ></h3>
+    ></div>
     <div class="flex justify-center items-baseline my-8">
-      <span
+      <div
         v-html="renderRichText(blok.paragraph)"
         class="mr-2 text-5xl font-extrabold"
-      ></span>
+      ></div>
     </div>
-    <p
+    <div
       v-html="renderRichText(blok.paragraph)"
       class="text-gray-500 text-light sm:text-lg"
-    ></p>
+    ></div>
     <div class="flex items-center justify-center space-x-2 cursor-pointer">
-      <p
+      <div
         v-html="renderRichText(blok.paragraph)"
         class="text-blue-500 text-light sm:text-lg"
-      ></p>
+      ></div>
       <font-awesome-icon
         :icon="['fas', 'arrow-right']"
         style="color: #3482f6"
@@ -76,8 +77,8 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span v-html="renderRichText(blok.span)"></span>
-        <span v-html="renderRichText(blok.span)" class="font-semibold"></span>
+        <div v-html="renderRichText(blok.span)"></div>
+        <div v-html="renderRichText(blok.span)" class="font-semibold"></div>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -109,11 +110,10 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span
+        <div
           class="line-through text-white/50"
           v-html="renderRichText(blok.span)"
-        >
-        </span>
+        ></div>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -129,11 +129,10 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span
+        <div
           class="line-through text-white/50"
           v-html="renderRichText(blok.span)"
-        >
-        </span>
+        ></div>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -149,10 +148,10 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span
+        <div
           class="line-through text-white/50"
           v-html="renderRichText(blok.span)"
-        ></span>
+        ></div>
       </li>
     </ul>
   </div>
