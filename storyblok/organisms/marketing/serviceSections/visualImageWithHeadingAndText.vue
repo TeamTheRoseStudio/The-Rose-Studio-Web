@@ -37,7 +37,7 @@
       class="lg:flex hidden items-center justify-center w-full mt-24"
       @click="irADiv"
     >
-      <NuxtLink to="#" class="flex space-x-3 cursor-pointer mb-6">
+      <NuxtLink class="flex space-x-3 cursor-pointer mb-6">
         <font-awesome-icon
           :icon="['fas', 'arrow-down']"
           style="color: #ffffff"
