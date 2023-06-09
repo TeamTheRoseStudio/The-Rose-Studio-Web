@@ -59,8 +59,7 @@
 </template>
 <script setup>
 const props = defineProps({ blok: Object });
-const route = useRoute();
 
-console.log(route)
+
 </script>
 <style scoped></style>

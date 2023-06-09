@@ -14,7 +14,7 @@
 </template>
 <script setup>
 defineProps({blok:Object})
-const route = useRoute();
-console.log(route);
+
+
 
 </script>

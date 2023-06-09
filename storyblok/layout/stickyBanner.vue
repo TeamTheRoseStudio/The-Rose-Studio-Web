@@ -47,6 +47,5 @@
 </template>
 <script setup>
 const props = defineProps({ blok: Object });
-console.log(props.blok.iconsCenter[0].link);
 </script>
 <style scoped></style>
