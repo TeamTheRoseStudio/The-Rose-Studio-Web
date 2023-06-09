@@ -13,12 +13,12 @@
       ></span>
     </div>
     <p
-      v-html="renderRichText(blok.paragraph)"
+      v-html="renderRichText(blok.paragraph2)"
       class="text-gray-500 text-light sm:text-lg"
     ></p>
     <div class="flex items-center justify-center space-x-2 cursor-pointer">
       <p
-        v-html="renderRichText(blok.paragraph)"
+        v-html="renderRichText(blok.paragraph3)"
         class="text-blue-500 text-light sm:text-lg"
       ></p>
       <font-awesome-icon
@@ -60,7 +60,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span v-html="renderRichText(blok.paragraph)"></span>
+        <span v-html="renderRichText(blok.paragraph4)"></span>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -76,9 +76,9 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span v-html="renderRichText(blok.paragraph)"></span>
+        <span v-html="renderRichText(blok.paragraph5)"></span>
         <span
-          v-html="renderRichText(blok.paragraph)"
+          v-html="renderRichText(blok.paragraph6)"
           class="font-semibold"
         ></span>
       </li>
@@ -96,7 +96,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span v-html="renderRichText(blok.paragraph)"> </span>
+        <span v-html="renderRichText(blok.paragraph7)"> </span>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -114,7 +114,7 @@
         </svg>
         <span
           class="line-through text-white/50"
-          v-html="renderRichText(blok.paragraph)"
+          v-html="renderRichText(blok.paragraph8)"
         >
         </span>
       </li>
@@ -134,7 +134,7 @@
         </svg>
         <span
           class="line-through text-white/50"
-          v-html="renderRichText(blok.paragraph)"
+          v-html="renderRichText(blok.paragraph9)"
         >
         </span>
       </li>
@@ -154,7 +154,7 @@
         </svg>
         <span
           class="line-through text-white/50"
-          v-html="renderRichText(blok.paragraph)"
+          v-html="renderRichText(blok.paragraph10)"
         ></span>
       </li>
     </ul>

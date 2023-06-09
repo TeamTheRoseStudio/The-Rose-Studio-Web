@@ -8,7 +8,6 @@ const story = await useAsyncStoryblok(
   slug && slug.length > 0 ? "servicios/" + slug : "home",
   { version: "draft" }
 );
-console.log("servicios/" + slug)
-
+console.log("servicios/" + slug);
 </script>
 <style scoped></style>

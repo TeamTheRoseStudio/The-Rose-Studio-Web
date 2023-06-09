@@ -9,10 +9,10 @@
       class="grid grid-cols-1 md:grid-cols-2 w-full place-content-center place-items-center mt-20 gap-y-10"
     >
       <div class="order-2 md:order-1">
-        <p
+        <div
           v-html="renderRichText(blok.paragraph)"
           class="max-w-xl mb-6 font-rubik text-white lg:mb-8 md:text-lg lg:text-xl"
-        ></p>
+        ></div>
         <StoryblokComponent
           v-for="blok_item in blok.buttonTRS"
           :key="blok_item._uid"
@@ -36,10 +36,10 @@
           style="color: #ffffff"
           class="mt-[6.5px]"
         />
-        <p
+        <div
           v-html="renderRichText(blok.paragraph2)"
           class="text-white text-lg"
-        ></p>
+        ></div>
       </NuxtLink>
     </div>
   </section>
