@@ -1,5 +1,9 @@
 <template>
-  <section v-editable="blok" class="gradient_bg_purple_hero h-full py-20 px-6">
+  <section
+    ref="divPadre"
+    v-editable="blok"
+    class="gradient_bg_purple_hero h-full py-20 px-6"
+  >
     <StoryblokComponent
       v-for="blok_item in blok.titleWithUnderline"
       :key="blok_item._uid"
@@ -29,8 +33,11 @@
         />
       </div>
     </div>
-    <div class="lg:flex hidden items-center justify-center w-full mt-24">
-      <NuxtLink to="#" class="flex space-x-3 cursor-pointer mb-6">
+    <div
+      class="lg:flex hidden items-center justify-center w-full mt-24"
+      @click="irADiv"
+    >
+      <NuxtLink class="flex space-x-3 cursor-pointer mb-6">
         <font-awesome-icon
           :icon="['fas', 'arrow-down']"
           style="color: #ffffff"
@@ -46,4 +53,11 @@
 </template>
 <script setup>
 const props = defineProps({ blok: Object });
+const divPadre = ref(null);
+const irADiv = () => {
+  const divDestino = divPadre.value.nextElementSibling;
+  if (divDestino) {
+    divDestino.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>

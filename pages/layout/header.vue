@@ -8,5 +8,13 @@ definePageMeta({
 const story = await useAsyncStoryblok("layout/header", {
   version: "draft",
 });
-console.log(story)
+
+useHead({
+  meta: [
+    {
+      name: "robots",
+      content: "noindex",
+    },
+  ],
+});
 </script>

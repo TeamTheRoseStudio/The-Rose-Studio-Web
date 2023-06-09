@@ -12,7 +12,7 @@
           height="50"
           :src="blok.image.filename"
           class="cursor-pointer pe-3"
-          :alt="blok.image.filename.alt"
+          :alt="blok.image.alt"
         />
       </NuxtLink>
       <div class="flex lg:hidden pl-14">

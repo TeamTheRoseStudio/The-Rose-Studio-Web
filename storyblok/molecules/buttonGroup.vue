@@ -18,6 +18,5 @@ const props = defineProps({ blok: Object });
 function getLength() {
   return props.blok.buttons.length;
 }
-console.log(getLength());
 </script>
 <style scoped></style>

@@ -1,14 +1,16 @@
 <template>
-  <section class="bg-black px-2 lg:px-20">
+  <section v-editable="blok" class="bg-black px-2 lg:px-20">
     <div class="py-8 px-4 lg:py-16 lg:px-6">
+      <!--Title W underline-->
       <StoryblokComponent
-        v-for="blok_item in blok.TitleWithUnderline"
+        v-for="blok_item in blok.titleWithUnderline"
         :key="blok_item._uid"
         :blok="blok_item"
       />
       <div
         class="grid gap-8 mb-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-20"
       >
+        <!--CardPlansPrice-->
         <StoryblokComponent
           v-for="blok_item in blok.cardPlansPrice"
           :key="blok_item._uid"
@@ -694,8 +696,8 @@
         <div
           class="grid grid-cols-5 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
         >
-          <div class="text-gray-500"></div>
-          <StoryblokComponent
+          <div class="text-gray-500 dark:text-gray-400"></div>
+          <!--ButtonTRS--><StoryblokComponent
             v-for="blok_item in blok.buttonTRS"
             :key="blok_item._uid"
             :blok="blok_item"
