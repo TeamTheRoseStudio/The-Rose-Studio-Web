@@ -26,11 +26,11 @@
           >
             <div
               v-html="renderRichText(blok.title)"
-              class="text-xl font-semibold text-gray-900 dark:text-white"
+              class="text-xl font-semibold text-white dark:text-white"
             ></div>
             <button
               type="button"
-              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              class="text-white bg-transparent hover:bg-gray-200 hover:text-white rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
               data-modal-hide="defaultModal"
             >
               <svg

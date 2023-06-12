@@ -1,29 +1,15 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-        <h2
-          class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-        >
-          Designed for business teams like yours
-        </h2>
-        <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-          Here at Flowbite we focus on markets where technology, innovation, and
-          capital can unlock long-term value and drive economic growth.
-        </p>
-      </div>
       <div class="grid gap-8 mb-8 xl:grid-cols-3">
         <!-- Pricing Card -->
         <div
-          class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm dark:border-gray-700 xl:p-8 dark:text-white dark:bg-gray-800"
+          class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-white rounded-lg border border-gray-200 shadow-sm dark:border-gray-700 xl:p-8 dark:text-white dark:bg-gray-800"
         >
           <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
-          <p class="text-gray-500 text-light sm:text-lg dark:text-gray-400">
-            Best option for personal use and for your next side projects.
-          </p>
           <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-5xl font-extrabold">$29</span>
-            <span class="text-gray-500">/month</span>
+            <span class="text-white">/month</span>
           </div>
           <!-- List -->
           <ul role="list" class="mb-8 space-y-4 text-left">
@@ -123,15 +109,13 @@
         </div>
         <!-- Pricing Card -->
         <div
-          class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm dark:border-gray-700 xl:p-8 dark:text-white dark:bg-gray-800"
+          class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-white rounded-lg border border-gray-200 shadow-sm dark:border-gray-700 xl:p-8 dark:text-white dark:bg-gray-800"
         >
           <h3 class="mb-4 text-2xl font-semibold">Company</h3>
-          <p class="text-gray-500 text-light sm:text-lg dark:text-gray-400">
-            Relevant for multiple users, extended & premium support.
-          </p>
+
           <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-5xl font-extrabold">$99</span>
-            <span class="text-gray-500">/month</span>
+            <span class="text-white">/month</span>
           </div>
           <!-- List -->
           <ul role="list" class="mb-8 space-y-4 text-left">
@@ -233,15 +217,15 @@
         </div>
         <!-- Pricing Card -->
         <div
-          class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm dark:border-gray-700 xl:p-8 dark:text-white dark:bg-gray-800"
+          class="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-white rounded-lg border border-gray-200 shadow-sm dark:border-gray-700 xl:p-8 dark:text-white dark:bg-gray-800"
         >
           <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
-          <p class="text-gray-500 text-light sm:text-lg dark:text-gray-400">
+          <p class="text-white text-light sm:text-lg dark:text-white">
             Best for large scale uses and extended redistribution rights.
           </p>
           <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-5xl font-extrabold">$499</span>
-            <span class="text-gray-500">/month</span>
+            <span class="text-white">/month</span>
           </div>
           <!-- List -->
           <ul role="list" class="mb-8 space-y-4 text-left">
@@ -365,7 +349,7 @@
       <div id="detailed-pricing" class="hidden overflow-x-auto mt-8 w-full">
         <div class="overflow-hidden min-w-max">
           <div
-            class="grid grid-cols-4 gap-x-16 p-4 text-sm font-medium text-gray-900 bg-gray-100 border-t border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+            class="grid grid-cols-4 gap-x-16 p-4 text-sm font-medium text-white bg-gray-100 border-t border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-white"
           >
             <div class="flex items-center">Tailwind CSS code</div>
             <div>Community Edition</div>
@@ -373,9 +357,9 @@
             <div>Designer Edition</div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
+            <div class="text-white dark:text-white">
               Basic components (<a
                 href="https://flowbite.com/docs/components/alerts/"
                 class="text-primary-600 hover:underline"
@@ -426,9 +410,9 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
+            <div class="text-white dark:text-white">
               Application UI (<a
                 href="/application-ui/preview/"
                 class="text-primary-600 hover:underline"
@@ -479,9 +463,9 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
+            <div class="text-white dark:text-white">
               Marketing UI pre-order
             </div>
             <div>
@@ -528,9 +512,9 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
+            <div class="text-white dark:text-white">
               E-commerce UI pre-order
             </div>
             <div>
@@ -577,7 +561,7 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 p-4 text-sm font-medium text-gray-900 bg-gray-100 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+            class="grid grid-cols-4 gap-x-16 p-4 text-sm font-medium text-white bg-gray-100 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-white"
           >
             <div class="flex items-center">Figma design files</div>
             <div>Community Edition</div>
@@ -585,9 +569,9 @@
             <div>Designer Edition</div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
+            <div class="text-white dark:text-white">
               Free edition (<a href="#" class="text-primary-600 hover:underline"
                 >duplicate in Figma</a
               >)
@@ -636,9 +620,9 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
+            <div class="text-white dark:text-white">
               Application UI (<a
                 href="#"
                 class="text-primary-600 hover:underline"
@@ -689,9 +673,9 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
+            <div class="text-white dark:text-white">
               Marketing UI (<a href="#" class="text-primary-600 hover:underline"
                 >preview in Figma</a
               >)
@@ -740,9 +724,9 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
+            <div class="text-white dark:text-white">
               E-commerce UI pre-order
             </div>
             <div>
@@ -789,7 +773,7 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 p-4 text-sm font-medium text-gray-900 bg-gray-100 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+            class="grid grid-cols-4 gap-x-16 p-4 text-sm font-medium text-white bg-gray-100 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:text-white"
           >
             <div class="flex items-center">HUGO templates</div>
             <div>Community Edition</div>
@@ -797,9 +781,9 @@
             <div>Designer Edition</div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">HUGO templates</div>
+            <div class="text-white dark:text-white">HUGO templates</div>
             <div>
               <svg
                 class="w-6 h-6 text-red-500"
@@ -844,9 +828,9 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400">
+            <div class="text-white dark:text-white">
               JSON data sources
             </div>
             <div>
@@ -893,9 +877,9 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-gray-700 border-b border-gray-200 dark:border-gray-700"
+            class="grid grid-cols-4 gap-x-16 py-5 px-4 text-sm text-white border-b border-gray-200 dark:border-gray-700"
           >
-            <div class="text-gray-500 dark:text-gray-400"></div>
+            <div class="text-white dark:text-white"></div>
             <div>
               <a
                 href="#"
