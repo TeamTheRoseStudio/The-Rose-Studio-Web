@@ -2,7 +2,7 @@
   <div v-editable="blok" class="space-y-4">
     <div
       v-html="renderRichText(blok.title)"
-      class="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#8A2387] to-[#F26021]"
+      class="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#F78888] to-[#F91616]"
     ></div>
     <div
       v-html="renderRichText(blok.title2)"
@@ -10,7 +10,7 @@
     ></div>
     <div
       v-html="renderRichText(blok.paragraph)"
-      class="text-lg text-gray-400"
+      class="text-lg text-white"
     ></div>
   </div>
 </template>

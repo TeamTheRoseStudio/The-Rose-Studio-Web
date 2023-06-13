@@ -1,10 +1,10 @@
 <template>
-  <div class="w-full mt-10 font-rubik">
-    <div>
+  <div class="w-full mt-10 flex flex-col items-center justify-center">
+    <div class="">
       <NuxtImg
         provider="storyblok"
         format="webp"
-        class="rounded-full mx-auto px-3 h-48 w-96 object-cover"
+        class="rounded-full h-64 w-64 object-cover object-top"
         :src="blok.avatarImage.filename"
         :alt="blok.avatarImage.alt"
       />

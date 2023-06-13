@@ -58,7 +58,7 @@ body {
 }
 
 .headerLink {
-  @apply text-white/80 cursor-pointer font-rubik shrink-0;
+  @apply text-white cursor-pointer font-rubik shrink-0;
 }
 
 /* HERO SECTION BACKGROUND CIRCLE LIGHTS */
@@ -67,7 +67,7 @@ body {
   @media only screen and (max-width: 600px) {
     background: radial-gradient(
       350px at 0% 70%,
-      rgba(152, 38, 123, 0.5) 1%,
+      rgba(225, 54, 54, 0.4) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }
@@ -75,7 +75,7 @@ body {
   @media only screen and (min-width: 768px) {
     background: radial-gradient(
       600px at -5% 55%,
-      rgba(152, 38, 123, 0.5) 1%,
+      rgba(225, 54, 54, 0.25) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }
@@ -105,14 +105,14 @@ body {
   @media only screen and (max-width: 600px) {
     background: radial-gradient(
       350px at 90% 20%,
-      rgba(152, 38, 123, 0.5) 1%,
+      rgba(225, 54, 54, 0.5) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }
   @media only screen and (min-width: 768px) {
     background: radial-gradient(
-      600px at 90% 20%,
-      rgba(152, 38, 123, 0.5) 1%,
+      600px at 90% 50%,
+      rgba(225, 54, 54, 0.4) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }
@@ -136,29 +136,41 @@ body {
   }
 }
 
-/* FOOTER SECTION BACKGROUND CIRCLE LIGHTS */
-.gradient_bg_purple_footer {
+/* CONTACT FORM SECTION BACKGROUND CIRCLE LIGHTS */
+
+.gradient_bg_red_contactForm {
   @media only screen and (max-width: 600px) {
     background: radial-gradient(
-      350px at -10% 100%,
-      rgba(152, 38, 123, 0.3) 1%,
+      350px at 90% 20%,
+      rgba(225, 54, 54, 0.5) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }
-
   @media only screen and (min-width: 768px) {
     background: radial-gradient(
-      600px at 10% 155%,
-      rgba(152, 38, 123, 0.4) 1%,
+      600px at 10% 50%,
+      rgba(225, 54, 54, 0.4) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }
 }
 
-.gradient_bg_orange_footer {
+/* TESTIMONIOS SECTION BACKGROUND CIRCLE LIGHTS */
+.gradient_bg_orange_testimonios {
+  @media only screen and (min-width: 768px) {
+    background: radial-gradient(
+      400px at 100% 40%,
+      rgba(225, 54, 54, 0.5) 1%,
+      rgba(229, 63, 50, 0) 100%
+    );
+  }
+}
+
+/* FOOTER SECTION BACKGROUND CIRCLE LIGHTS */
+.gradient_bg_purple_footer {
   @media only screen and (max-width: 600px) {
     background: radial-gradient(
-      250px at 120% 55%,
+      250px at 50% 100%,
       rgba(225, 54, 54, 0.7) 1%,
       rgba(229, 63, 50, 0) 100%
     );
@@ -166,8 +178,18 @@ body {
 
   @media only screen and (min-width: 768px) {
     background: radial-gradient(
+      400px at 15% 105%,
+      rgba(225, 54, 54, 0.3) 1%,
+      rgba(229, 63, 50, 0) 100%
+    );
+  }
+}
+
+.gradient_bg_orange_footer {
+  @media only screen and (min-width: 768px) {
+    background: radial-gradient(
       400px at 85% 105%,
-      rgba(225, 54, 54, 0.6) 1%,
+      rgba(225, 54, 54, 0.4) 1%,
       rgba(229, 63, 50, 0) 100%
     );
   }

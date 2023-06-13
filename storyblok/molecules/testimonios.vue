@@ -1,19 +1,19 @@
 <template>
-  <section class="bg-white" v-editable="blok">
+  <section class="bg-black gradient_bg_orange_testimonios" v-editable="blok">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 my-10">
       <div class="md:grid md:grid-cols-3 md:w-full text-center mb-8 lg:mb-16">
         <div>
           <div
             v-html="renderRichText(blok.title)"
-            class="mb-4 text-start text-5xl md:text-4xl lg:text-5xl tracking-tight font-extrabold"
+            class="mb-4 text-start text-white text-5xl md:text-4xl lg:text-5xl tracking-tight font-extrabold"
           ></div>
           <div
-            class="bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-[280px] md:w-[220px] lg:w-[280px] mb-3"
+            class="bg-gradient-to-r from-[#F78888] to-[#F91616] h-[2.81px] w-[280px] md:w-[220px] lg:w-[280px] mb-3"
           ></div>
         </div>
         <div
           v-html="renderRichText(blok.paragraph)"
-          class="md:col-span-2 prose max-w-none md:ms-10 text-start font-light dark:text-gray-400 sm:text-xl"
+          class="md:col-span-2 prose max-w-none md:ms-10 text-start font-light text-white sm:text-xl"
         ></div>
       </div>
       <!--Services GRID -->
@@ -33,7 +33,7 @@
           class="mb-4 text-5xl md:text-7xl tracking-tight font-extrabold text-left md:text-center"
         ></div>
         <div
-          class="bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-full md:w-[420px] mb-3"
+          class="bg-gradient-to-r from-[#F78888] to-[#F91616] h-[2.81px] w-full md:w-[420px] mb-3"
         ></div>
       </div>
       <div
@@ -51,7 +51,7 @@
       </div>
       <div class="flex w-full justify-center mt-20 mb-10 lg:mb-0">
         <div
-          class="bg-gradient-to-r from-[#8A2387] to-[#F26021] text-white pr-5 inline-flex items-center justify-center"
+          class="bg-gradient-to-r from-[#F78888] to-[#F91616] text-white pr-5 inline-flex items-center justify-center"
         >
           <StoryblokComponent
             v-for="blok_item in blok.button"

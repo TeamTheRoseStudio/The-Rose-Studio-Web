@@ -4,7 +4,7 @@
       <li class="inline-flex items-center">
         <NuxtLink
           :href="route.path"
-          class="ml-2 inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+          class="ml-2 inline-flex items-center text-sm font-medium text-white hover:text-blue-600 dark:text-white dark:hover:text-white"
         >
           {{ route.fullPath }}
         </NuxtLink>
