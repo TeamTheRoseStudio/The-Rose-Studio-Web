@@ -1,6 +1,6 @@
 <template>
   <div v-editable="blok">
-    <NuxtLink :to="blok.link">
+    <NuxtLink :to="blok.link.cached_url">
       <button
         v-if="blok.type == 'normal'"
         type="button"
