@@ -9,7 +9,7 @@
         {{ blok.title }}
       </h1>
       <p
-        class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+        class="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 lg:px-48"
       >
         {{ blok.paragraph }}
       </p>

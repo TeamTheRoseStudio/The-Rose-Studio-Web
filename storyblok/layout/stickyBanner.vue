@@ -1,7 +1,7 @@
 <template>
   <div
-    v-editable="blok"
-    class="hidden lg:grid bg-black grid-cols-3 items-center place-items-center py-3"
+    
+    class="hidden lg:grid grid-cols-3 items-center place-items-center py-3"
   >
     <div class="flex space-x-4">
       <div>
@@ -41,7 +41,7 @@
       v-for="blok_item in blok.button"
       :key="blok_item._uid"
       :blok="blok_item"
-      class="text-sm font-medium text-center hidden max-w-[210px] max-h-[45pxs] md:w-full bg-gradient-to-r from-[#8A2387] to-[#F26021] md:pr-5 lg:inline-flex items-center justify-center hover:bg-gray-100 text-white"
+      class="text-sm font-medium text-center hidden max-w-[210px] max-h-[45pxs] md:w-full bg-gradient-to-r from-[#F78888] to-[#F91616] md:pr-5 lg:inline-flex items-center justify-center hover:bg-gray-100 text-white"
     />
   </div>
 </template>

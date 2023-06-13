@@ -3,8 +3,8 @@
     v-editable="blok"
     class="relative overflow-x-auto shadow-md sm:rounded-lg"
   >
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-      <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
+    <table class="w-full text-sm text-left text-white dark:text-white">
+      <thead class="text-xs text-white uppercase dark:text-white">
         <tr>
           <th
             v-for="(th, index) in blok.table.thead"

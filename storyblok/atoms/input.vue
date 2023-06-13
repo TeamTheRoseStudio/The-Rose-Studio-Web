@@ -12,7 +12,7 @@
         <input
           :type="blok.type"
           :id="`input-${blok.text}`"
-          class="text-white border-[1px] border-gray-300/50 text-sm block w-full p-4 bg-black placeholder:text-gray-300/50"
+          class="text-white border-[1px] border-gray-300/50 text-sm block w-full p-4 bg-black placeholder:text-white/50"
           :placeholder="blok.placeholder"
           :required="blok.required"
           :name="blok.text"

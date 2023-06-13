@@ -1,5 +1,5 @@
 <template>
-  <StoryblokComponent v-if="stickyBanner" :blok="stickyBanner.content" />
+  <!-- <StoryblokComponent v-if="stickyBanner" :blok="stickyBanner.content" /> -->
 </template>
 <script setup>
 defineProps({ blok: Object });

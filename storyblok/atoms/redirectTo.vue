@@ -4,7 +4,7 @@
       <div v-html="renderRichText(blok.title)" class="pt-14 text-3xl mb-1"></div>
       <div class="text-xl mb-1">Serás redirigido en {{ contador }}</div>
       <div
-        class="mb-10 sm:mx-auto bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-[190px]"
+        class="mb-10 sm:mx-auto bg-gradient-to-r from-[#F78888] to-[#F91616] h-[2.81px] w-[190px]"
       ></div>
     </div>
   </div>

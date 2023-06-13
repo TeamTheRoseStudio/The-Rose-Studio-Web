@@ -31,7 +31,6 @@
     "flowbite": "^1.6.5",
     "formkit": "^0.17.2",
     "nuxt-font-loader-strategy": "^1.1.10",
-    "vee-validate": "^4.9.6",
-    "vercel": "^30.2.1"
+    "vee-validate": "^4.9.6"
   }
 }

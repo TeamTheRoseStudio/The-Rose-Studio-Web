@@ -21,11 +21,11 @@
           </a>
         </div>
         <div
-          class="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+          class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl"
           v-html="renderRichText(blok.title)"
         ></div>
         <div
-          class="mt-6 text-lg leading-8 text-gray-600"
+          class="mt-6 text-lg leading-8 text-white"
           v-html="renderRichText(blok.description)"
         ></div>
         <div class="mt-10 flex items-center gap-x-6">
