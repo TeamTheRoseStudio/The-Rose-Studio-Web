@@ -1,1 +1,0 @@
-import{T as r,m as a,u as n,c,k as l,U as _,o as k}from"./entry.0eb5e015.js";const b={__name:"sticky-banner",props:{blok:Object},async setup(p){let o,t;const e=([o,t]=r(()=>_("layout/sticky-banner",{version:"draft"})),o=await o,t(),o);return(m,y)=>{const s=a("StoryblokComponent");return n(e)?(k(),c(s,{key:0,blok:n(e).content},null,8,["blok"])):l("",!0)}}};export{b as default};

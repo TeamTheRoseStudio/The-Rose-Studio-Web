@@ -1,1 +1,0 @@
-import{l as s,T as a,U as c,m as l,u as n,o as _,c as m,k as p}from"./entry.0eb5e015.js";const i=s({__name:"footer",async setup(u){let o,e;const t=([o,e]=a(()=>c("layout/footer",{version:"draft"})),o=await o,e(),o);return(k,y)=>{const r=l("StoryblokComponent");return n(t)?(_(),m(r,{key:0,blok:n(t).content},null,8,["blok"])):p("",!0)}}});export{i as default};
