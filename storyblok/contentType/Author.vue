@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full mt-10">
+  <div class="w-full mt-10 font-rubik">
     <div>
       <NuxtImg
         provider="storyblok"
