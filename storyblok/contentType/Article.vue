@@ -1,5 +1,5 @@
 <template>
-  <div v-editable="blok" class="w-full px-10 pt-10">
+  <div v-editable="blok" class="font-rubik w-full px-10 pt-10">
     <!--Titulo del articulo-->
     <div
       class="flex items-left md:items-center w-full flex-col"
