@@ -12,7 +12,7 @@
           height="50"
           :src="blok.image.filename"
           class="cursor-pointer pe-3"
-          :alt="blok.image.filename.alt"
+          :alt="blok.image.alt"
         />
       </NuxtLink>
       <div class="flex lg:hidden pl-14">
@@ -20,7 +20,7 @@
       </div>
       <div class="space-x-10 hidden lg:flex">
         <div v-for="item in blok.headerItem" class="headerLink">
-          <NuxtLink :to="item.link.cached_url">
+          <NuxtLink :to="`/${item.link.cached_url}`">
             {{ item.text }}
           </NuxtLink>
         </div>

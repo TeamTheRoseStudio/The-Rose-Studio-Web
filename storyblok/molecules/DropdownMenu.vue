@@ -10,7 +10,7 @@
     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
       <li v-for="li in prop.items">
         <NuxtLink
-          :to="li.link.cached_url"
+          :to="`${li.link.cached_url}`"
           class="block px-4 py-2 hover:bg-gray-100/20"
           ><div class="prose text-white">{{ li.text }}</div></NuxtLink
         >
@@ -20,5 +20,4 @@
 </template>
 <script setup>
 const prop = defineProps({items: Object})
-console.log(prop.items)
 </script>

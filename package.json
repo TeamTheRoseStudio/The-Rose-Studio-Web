@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-28092461.2ed711e",
+    "@nuxtjs/google-fonts": "^3.0.1",
     "@nuxtjs/html-validator": "^1.4.0",
     "@nuxtjs/tailwindcss": "^6.6.6",
     "@tailwindcss/typography": "^0.5.9",
@@ -30,6 +31,7 @@
     "flowbite": "^1.6.5",
     "formkit": "^0.17.2",
     "nuxt-font-loader-strategy": "^1.1.10",
-    "vee-validate": "^4.9.6"
+    "vee-validate": "^4.9.6",
+    "vercel": "^30.2.1"
   }
 }

@@ -7,12 +7,12 @@
       class="text-center pb-6 text-terciario font-semibold text-lg"
       v-html="renderRichText(blok.title)"
     ></div>
-    <a class="">
+    <div>
       <div
         class="mb-2 text-center"
         v-html="renderRichText(blok.subtitle)"
       ></div>
-    </a>
+    </div>
     <div
       class="mb-3 prose-xl max-w-none text-center font-bold"
       v-html="renderRichText(blok.person)"

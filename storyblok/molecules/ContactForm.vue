@@ -8,7 +8,7 @@
           v-html="renderRichText(blok.title)"
         ></div>
         <div
-          class="bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-[360px] md:w-[420px] mb-3"
+          class="bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-[280px] md:w-[420px] mb-3"
         ></div>
       </div>
       <div

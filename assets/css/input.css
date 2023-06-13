@@ -3,43 +3,42 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Rubik";
+  font-family: "Rubik" sans-serif;
   src: url("/fonts/Rubik-Regular.ttf");
 }
-@font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins-Regular.ttf");
+* {
+  font-family: Rubik;
 }
 body {
   background-color: black;
 }
 @layer base {
   h1 {
-    font-family: "Poppins";
+    font-family: "Rubik";
     font-weight: 700;
     size: 32px;
     line-height: 30px;
   }
   h2 {
-    font-family: "Poppins";
+    font-family: "Rubik";
     font-weight: 700;
     size: 64px;
     line-height: 96px;
   }
   h3 {
-    font-family: "Poppins";
+    font-family: "Rubik";
     font-weight: 500;
     size: 24px;
     line-height: 31.2px;
   }
   h4 {
-    font-family: "Poppins";
+    font-family: "Rubik";
     font-weight: 500;
     size: 16px;
     line-height: 24px;
   }
   .p1-regular {
-    font-family: "Poppins";
+    font-family: "Rubik";
     font-weight: 400;
     size: 16px;
     line-height: 24px;
@@ -51,7 +50,7 @@ body {
     line-height: 24px;
   }
   .p2-regular {
-    font-family: "Prata";
+    font-family: "Rubik";
     font-weight: 400;
     size: 32px;
     line-height: 30px;

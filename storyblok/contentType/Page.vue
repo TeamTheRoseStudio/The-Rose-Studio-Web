@@ -18,7 +18,7 @@ const styleObject = computed(() => {
 });
 
 useHead({
-  titleTemplate: `${prop.blok.pageName} - The Rose Studio`,
+  titleTemplate: `${prop.blok.pageName} | The Rose Studio 🌹`,
 });
 
 useSeoMeta({

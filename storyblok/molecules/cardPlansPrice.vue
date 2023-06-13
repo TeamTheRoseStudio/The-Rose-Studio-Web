@@ -1,30 +1,34 @@
 <template>
   <div
+    v-editable="blok"
     class="flex flex-col p-4 lg:p-6 max-w-lg text-center text-white bg-dark border border-white shadow-sm xl:p-8"
   >
-    <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
+    <div
+      v-html="renderRichText(blok.title)"
+      class="mb-4 text-2xl font-semibold"
+    ></div>
     <div class="flex justify-center items-baseline my-8">
-      <span class="mr-2 text-5xl font-extrabold">$29</span>
-      <span class="text-gray-500">/month</span>
+      <div
+        v-html="renderRichText(blok.paragraph)"
+        class="mr-2 text-5xl font-extrabold"
+      ></div>
     </div>
-    <p class="text-gray-500 text-light sm:text-lg">
-      $19 USD per month, paid annually
-    </p>
+    <div
+      v-html="renderRichText(blok.paragraph)"
+      class="text-gray-500 text-light sm:text-lg"
+    ></div>
     <div class="flex items-center justify-center space-x-2 cursor-pointer">
-      <p class="text-blue-500 text-light sm:text-lg">Go to annual plan</p>
+      <div
+        v-html="renderRichText(blok.paragraph)"
+        class="text-blue-500 text-light sm:text-lg"
+      ></div>
       <font-awesome-icon
         :icon="['fas', 'arrow-right']"
         style="color: #3482f6"
         class="mt-1"
       />
     </div>
-    <button
-      class="bg-gradient-to-r from-[#8A2387] to-[#F26021] inline-flex items-center justify-center mt-6"
-    >
-      <a href="#" class="py-3 text-sm font-medium text-center text-white">
-        Get started
-      </a>
-    </button>
+    <ButtonTRS />
     <!-- List -->
     <ul role="list" class="mb-8 space-y-4 text-left mt-10">
       <li class="flex items-center space-x-3">
@@ -41,7 +45,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span>Individual configuration</span>
+        <span v-html="renderRichText(blok.span)"></span>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -57,7 +61,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span>No setup, monthly, or hidden fees</span>
+        <span v-html="renderRichText(blok.span)"></span>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -73,7 +77,8 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span>Team size: <span class="font-semibold">1 developer</span></span>
+        <div v-html="renderRichText(blok.span)"></div>
+        <div v-html="renderRichText(blok.span)" class="font-semibold"></div>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -89,9 +94,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span
-          >Premium support: <span class="font-semibold">6 months</span></span
-        >
+        <span v-html="renderRichText(blok.span)"> </span>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -107,9 +110,10 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span class="line-through text-white/50"
-          >Free updates: <span class="font-semibold">6 months</span></span
-        >
+        <div
+          class="line-through text-white/50"
+          v-html="renderRichText(blok.span)"
+        ></div>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -125,9 +129,10 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span class="line-through text-white/50"
-          >Free updates: <span class="font-semibold">6 months</span></span
-        >
+        <div
+          class="line-through text-white/50"
+          v-html="renderRichText(blok.span)"
+        ></div>
       </li>
       <li class="flex items-center space-x-3">
         <!-- Icon -->
@@ -143,10 +148,14 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span class="line-through text-white/50"
-          >Free updates: <span class="font-semibold">6 months</span></span
-        >
+        <div
+          class="line-through text-white/50"
+          v-html="renderRichText(blok.span)"
+        ></div>
       </li>
     </ul>
   </div>
 </template>
+<script setup>
+const props = defineProps({ blok: Object });
+</script>
