@@ -11,7 +11,7 @@
           width="97"
           height="50"
           :src="blok.image.filename"
-          class="cursor-pointer pe-3"
+          class="cursor-pointer "
           :alt="blok.image.alt"
         />
       </NuxtLink>

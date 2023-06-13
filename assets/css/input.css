@@ -67,7 +67,7 @@ body {
   @media only screen and (max-width: 600px) {
     background: radial-gradient(
       350px at 0% 70%,
-      rgba(225, 54, 54, 0.4) 1%,
+      rgba(225, 54, 54, 0.4) 2%,
       rgba(229, 63, 50, 0) 100%
     );
   }
