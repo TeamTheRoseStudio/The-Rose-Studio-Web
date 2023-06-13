@@ -28,7 +28,7 @@
         :src="autor.content.avatarImage.filename"
         :alt="autor.content.avatarImage.alt"
       />
-      <NuxtLink>
+      <NuxtLink :to="`/${autor.full_slug}`">
         <div class="font-medium dark:text-white">
           <div>{{ autor.name }}</div>
           <div class="text-sm text-white">
