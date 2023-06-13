@@ -41,7 +41,7 @@
       v-for="blok_item in blok.button"
       :key="blok_item._uid"
       :blok="blok_item"
-      :link="blok.button.link"
+      :link="blok_item.link"
       class="text-sm font-medium text-center hidden max-w-[210px] max-h-[45pxs] md:w-full bg-gradient-to-r from-[#F78888] to-[#F91616] md:pr-5 lg:inline-flex items-center justify-center hover:bg-gray-100 text-white"
     />
   </div>
