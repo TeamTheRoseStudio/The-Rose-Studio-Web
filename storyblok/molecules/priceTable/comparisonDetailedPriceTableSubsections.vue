@@ -5,13 +5,12 @@
     <!-- detailed plan comparison items -->
     <div v-html="renderRichText(blok.title)" class="text-white"></div>
     <!-- detailed plan comparison check icons -->
-    <StoryblokComponent
-      v-for="blok_item in blok.listItemPriceIcon"
-      :key="blok_item._uid"
-      :blok="blok_item"
-    />
+    <div v-if="blok.listItemPriceIcon.icon">
+      <FontAwesomeIcon :icon="blok.listItemPriceIcon.icon" /> 
+    </div>
   </div>
 </template>
 <script setup>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 const props = defineProps({ blok: Object });
 </script>

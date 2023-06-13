@@ -1,8 +1,5 @@
 <template>
   <button
-    v-if="blok.type == 'normal'"
-    :style="styleObject"
-    :class="blok.size_button"
     type="button"
     class="hidden lg:flex justify-center items-center mx-auto font-medium text-white"
     data-collapse-toggle="detailed-pricing"

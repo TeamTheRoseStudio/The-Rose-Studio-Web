@@ -13,7 +13,6 @@
   </div>
   <div class="grid grid-cols-5 gap-x-16 py-5 px-4 text-sm text-white">
     <div class="text-white dark:text-white"></div>
-    <!--ButtonTRS-->
   </div>
 </template>
 <script setup>

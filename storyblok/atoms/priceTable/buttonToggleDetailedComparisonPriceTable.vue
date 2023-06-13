@@ -1,26 +1,17 @@
 <template>
-  <button
-    v-if="blok.type == 'normal'"
+  <div>
+  <div
+    v-html="renderRichText(blok.title)"
     type="button"
-    :style="styleObject"
-    :class="blok.size_button"
     class="flex justify-center items-center mx-auto font-medium text-white dark-text-primary-400 hover:text-primary-700"
     data-collapse-toggle="detailed-pricing"
   >
-    {{ blok.title }}
-    <svg
-      class="ml-1 w-5 h-5"
-      fill="currentColor"
-      viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-        clip-rule="evenodd"
-      ></path>
-    </svg>
-  </button>
+
+  </div>
+  <div>
+    <!-- TODO añadir icono de flechita para abajo y q la flecha mire parriba cuando este abierto.-->
+  </div>
+</div>
 </template>
 <script setup>
 const props = defineProps({ blok: Object });
