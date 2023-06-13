@@ -5,7 +5,7 @@
       type="button"
       :style="styleObject"
       :class="blok.size_button"
-      class="bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center"
+      class="bg-gradient-to-r from-[#F78888] to-[#F91616] pr-5 inline-flex items-center justify-center"
     >
       <div class="px-5 py-3 text-sm font-medium text-center text-white">
         {{ blok.title }}

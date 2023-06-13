@@ -14,11 +14,11 @@
               v-html="renderRichText(blok.title)"
             ></div>
             <div
-              class="bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-[190px] mb-3"
+              class="bg-gradient-to-r from-[#F78888] to-[#F91616] h-[2.81px] w-[190px] mb-3"
             ></div>
           </div>
           <div
-            class="md:col-span-2 md:ms-10 text-start font-light text-white dark:text-gray-400 sm:text-xl"
+            class="md:col-span-2 md:ms-10 text-start font-light text-white dark:text-white sm:text-xl"
             v-html="renderRichText(blok.paragraph)"
           ></div>
         </div>
@@ -43,7 +43,7 @@
               v-html="renderRichText(item.paragraph)"
             ></div>
             <div
-              class="md:ml-0 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center"
+              class="md:ml-0 bg-gradient-to-r from-[#F78888] to-[#F91616] pr-5 inline-flex items-center justify-center"
             >
               <StoryblokComponent
                 v-for="blok_item in item.button"

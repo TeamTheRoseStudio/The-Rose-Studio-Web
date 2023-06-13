@@ -8,7 +8,7 @@
           v-html="renderRichText(blok.title)"
         ></div>
         <div
-          class="bg-gradient-to-r from-[#8A2387] to-[#F26021] h-[2.81px] w-[280px] md:w-[420px] mb-3"
+          class="bg-gradient-to-r from-[#F78888] to-[#F91616] h-[2.81px] w-[280px] md:w-[420px] mb-3"
         ></div>
       </div>
       <div
@@ -62,7 +62,7 @@
           <button
             v-if="terms"
             type="submit"
-            class="bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center"
+            class="bg-gradient-to-r from-[#F78888] to-[#F91616] pr-5 inline-flex items-center justify-center"
           >
             <button
               type="submit"
@@ -96,7 +96,7 @@
             
               :icon="card.icon.icon"
               style="color: #ffffff"
-              class="bg-gradient-to-r from-[#8A2387] to-[#F26021] p-4 text-2xl w-[50px] h-[50px]"
+              class="bg-gradient-to-r from-[#F78888] to-[#F91616] p-4 text-2xl w-[50px] h-[50px]"
             />
             <div class="my-4">
               <div

@@ -28,7 +28,7 @@
     id="dropdownWithText"
     class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
   >
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+    <ul class="py-2 text-sm text-white dark:text-white">
       <li v-for="li in blok.dropdownItem">
         <NuxtLink
           :to="`/${li.link.cached_url}`"

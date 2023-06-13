@@ -41,7 +41,7 @@
         >
           <svg
             aria-hidden="true"
-            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -67,7 +67,7 @@
         >
           <svg
             aria-hidden="true"
-            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
