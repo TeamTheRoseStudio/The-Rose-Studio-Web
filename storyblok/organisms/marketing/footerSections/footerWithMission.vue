@@ -14,7 +14,7 @@
             :alt="blok.image.alt"
           />
           <div
-            class="text-sm leading-6 text-gray-300"
+            class="text-sm leading-6 text-white"
             v-html="renderRichText(blok.description)"
           ></div>
           <div class="flex space-x-6">
@@ -23,7 +23,7 @@
               :key="item.name"
               :href="item.href"
               target="_blank"
-              class="text-gray-500 hover:text-gray-400"
+              class="text-white hover:text-white"
             >
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
@@ -41,7 +41,7 @@
                 <li v-for="item in navigation.support" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-sm leading-6 text-gray-300 hover:text-white"
+                    class="text-sm leading-6 text-white hover:text-white"
                     >{{ item.name }}</a
                   >
                 </li>
@@ -55,7 +55,7 @@
                 <li v-for="item in navigation.company" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-sm leading-6 text-gray-300 hover:text-white"
+                    class="text-sm leading-6 text-white hover:text-white"
                     >{{ item.name }}</a
                   >
                 </li>
@@ -65,7 +65,7 @@
         </div>
       </div>
       <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-        <p class="text-xs leading-5 text-gray-400">
+        <p class="text-xs leading-5 text-white">
           &copy; {{ date }}. Hecho con &hearts; by
           <a
             target="_blank"

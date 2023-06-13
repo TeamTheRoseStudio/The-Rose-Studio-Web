@@ -1,17 +1,17 @@
 <template>
   <div v-editable="blok" class="space-y-4">
-    <h3
+    <div
       v-html="renderRichText(blok.title)"
-      class="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#8A2387] to-[#F26021]"
-    ></h3>
-    <h4
+      class="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#F78888] to-[#F91616]"
+    ></div>
+    <div
       v-html="renderRichText(blok.title2)"
       class="text-2xl font-semibold"
-    ></h4>
-    <p
+    ></div>
+    <div
       v-html="renderRichText(blok.paragraph)"
-      class="text-lg text-gray-400"
-    ></p>
+      class="text-lg text-white"
+    ></div>
   </div>
 </template>
 <script setup>

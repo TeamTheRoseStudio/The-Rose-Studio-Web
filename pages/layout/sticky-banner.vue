@@ -1,5 +1,5 @@
 <template>
-  <StoryblokComponent v-if="stickyBanner" :blok="stickyBanner.content" />
+  <!-- <StoryblokComponent v-if="stickyBanner" :blok="stickyBanner.content" /> -->
 </template>
 <script setup>
 defineProps({ blok: Object });
@@ -8,5 +8,14 @@ definePageMeta({
 });
 const stickyBanner = await useAsyncStoryblok("layout/sticky-banner", {
   version: "draft",
+});
+
+useHead({
+  meta: [
+    {
+      name: "robots",
+      content: "noindex",
+    },
+  ],
 });
 </script>

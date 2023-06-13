@@ -13,20 +13,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "es",
       },
-      link: [
-        {
-          rel: "preload",
-          as: "font",
-          crossorigin: "anonymous",
-          href: "/fonts/Poppins-Regular.ttf",
-        },
-        {
-          rel: "preload",
-          as: "font",
-          crossorigin: "anonymous",
-          href: "/fonts/Rubik-Regular.ttf",
-        },
-      ],
+      link: [],
     },
   },
   css: [
@@ -39,7 +26,9 @@ export default defineNuxtConfig({
     "@storyblok/nuxt",
     "@nuxt/image-edge",
     "@formkit/nuxt",
+    "@nuxtjs/google-fonts",
   ],
+
   storyblok: {
     accessToken: "OfBJYurD1JRpKVUsUP6TsAtt",
   },
@@ -47,6 +36,13 @@ export default defineNuxtConfig({
     provider: "storyblok",
     storyblok: {
       baseURL: "https://a.storyblok.com/",
+    },
+  },
+  googleFonts: {
+    preload: true,
+    download: true,
+    families: {
+      Rubik: true,
     },
   },
   build: {
@@ -57,4 +53,7 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
     ],
   },
+//   plugins: [
+//     '~/plugins/calendly.client.js'
+// ]
 });

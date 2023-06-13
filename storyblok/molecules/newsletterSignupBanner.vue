@@ -9,14 +9,14 @@
       <form action="#" class="flex flex-col items-center w-full md:flex-row">
         <div
           for="email"
-          class="flex-shrink-0 mb-2 mr-auto text-sm font-medium text-gray-500 md:mb-0 md:mr-4 dark:text-gray-400 md:m-0"
+          class="flex-shrink-0 mb-2 mr-auto text-sm font-medium text-white md:mb-0 md:mr-4 dark:text-white md:m-0"
           v-html="renderRichText(blok.text)"></div
         >
         <input
           type="email"
           id="email"
           :placeholder="blok.placeholder"
-          class="bg-white border border-gray-300 text-gray-900 md:w-64 mb-2 md:mb-0 md:mr-4 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          class="bg-white border border-gray-300 text-white md:w-64 mb-2 md:mb-0 md:mr-4 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           required
         />
       <StoryblokComponent
@@ -31,7 +31,7 @@
       <button
         data-dismiss-target="#newsletter-banner"
         type="button"
-        class="flex-shrink-0 inline-flex justify-center items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white"
+        class="flex-shrink-0 inline-flex justify-center items-center text-white hover:bg-gray-200 hover:text-white rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white"
       >
         <svg
           aria-hidden="true"

@@ -1,5 +1,9 @@
 <template>
-  <section class="bg-dark gradient_bg_orange_hero h-full" v-editable="blok">
+  <section
+    ref="divPadre"
+    class=" gradient_bg_orange_hero h-full"
+    v-editable="blok"
+  >
     <div class="gradient_bg_purple_hero">
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="px-10 md:px-20 pb-32 py-0 lg:py-40 order-2 lg:order-first">
@@ -11,17 +15,17 @@
               class="leading-[50px] mb-1 lg:mb-4 inline-block text-3xl max-w-[300px] md:max-w-xl lg:min-w-[270px] font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white text-white"
             ></div>
             <h1
-              class="xl:mr-0 mb-3 md:mb-0 lg:pt-2 xl:pt-5 text-3xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-[#8A2387] to-[#F26021]"
+              class="xl:mr-0 mb-3 md:mb-0 lg:pt-2 xl:pt-3 text-3xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#F78888] to-[#F91616]"
             >
               {{ blok.featuredTitleText }}
             </h1>
           </div>
           <div
-            class="prose max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+            class="prose max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-xl dark:text-white"
             v-html="renderRichText(blok.paragraph)"
           ></div>
           <div
-            class="mt-4 bg-gradient-to-r from-[#8A2387] to-[#F26021] pr-5 inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            class="mt-4 bg-gradient-to-r from-[#F78888] to-[#F91616] pr-5 inline-flex items-center justify-center hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
             <StoryblokComponent
               v-for="blok_item in blok.button"
@@ -51,6 +55,7 @@
             :key="blok_item._uid"
             :blok="blok_item"
             class="text-white text-lg"
+            @click="irADiv"
           />
         </div>
       </div>
@@ -59,8 +64,12 @@
 </template>
 <script setup>
 const props = defineProps({ blok: Object });
-const route = useRoute();
-
-console.log(route)
+const divPadre = ref(null);
+const irADiv = () => {
+  const divDestino = divPadre.value.nextElementSibling;
+  if (divDestino) {
+    divDestino.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
 <style scoped></style>

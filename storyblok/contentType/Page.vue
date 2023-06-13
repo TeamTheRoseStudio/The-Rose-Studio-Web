@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-body" v-editable="blok" :style="styleObject">
+  <div class="bg-body" v-editable="blok">
     <StoryblokComponent
       v-for="blok_item in blok.body"
       :key="blok._uid"
@@ -11,14 +11,14 @@
 <script setup>
 const prop = defineProps({ blok: Object });
 
-const styleObject = computed(() => {
-  return {
-    "--body-color": prop.blok.pageColor?.color,
-  };
-});
+// const styleObject = computed(() => {
+//   return {
+//     "--body-color": prop.blok.pageColor?.color,
+//   };
+// });
 
 useHead({
-  titleTemplate: `${prop.blok.pageName} - The Rose Studio`,
+  titleTemplate: `${prop.blok.pageName} | The Rose Studio 🌹`,
 });
 
 useSeoMeta({
