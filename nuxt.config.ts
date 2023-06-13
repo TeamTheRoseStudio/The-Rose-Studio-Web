@@ -53,4 +53,7 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
     ],
   },
+//   plugins: [
+//     '~/plugins/calendly.client.js'
+// ]
 });
