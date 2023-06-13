@@ -1,7 +1,7 @@
 <template>
   <section
     ref="divPadre"
-    class="bg-dark gradient_bg_orange_hero h-full"
+    class=" gradient_bg_orange_hero h-full"
     v-editable="blok"
   >
     <div class="gradient_bg_purple_hero">

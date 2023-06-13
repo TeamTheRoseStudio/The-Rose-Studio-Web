@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-dark mb-20 h-full">
+  <section class="bg-dark mb-20 h-full gradient_bg_red_contactForm">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 md:px-10">
       <!-- TODO: poner padding-top a la sección de testimonios y checkear todos los paddings de la homepage. -->
       <div class="flex items-left md:items-center w-full flex-col mt-20">

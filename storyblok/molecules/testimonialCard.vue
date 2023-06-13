@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="py-10 border border-black/50 shadow dark:bg-gray-800 dark:border-gray-700"
+    class="py-10 border border-white shadow dark:bg-gray-800 dark:border-gray-700"
   >
     <div
       class="text-center pb-6 text-terciario font-semibold text-lg"
