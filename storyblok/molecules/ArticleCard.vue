@@ -21,6 +21,7 @@
     <div class="font-light text-slate-400 dark:text-gray-400">
       Publicado el {{ date }}
     </div>
+    <div class="bg-slate-700 mx-0.5 rounded-lg p-0.5 inline-block" v-for="tag in tags">{{ tag }}</div>
   </div>
 </template>
 
@@ -32,5 +33,6 @@ defineProps({
   full_slug: String,
   author: Object,
   date: String,
+  tags: Array
 });
 </script>
