@@ -2,7 +2,8 @@
   <section
     ref="divPadre"
     v-editable="blok"
-    class="gradient_bg_purple_hero h-full py-20 px-6"
+    class="gradient_bg_purple_
+    ero h-full py-20 px-6"
   >
     <StoryblokComponent
       v-for="blok_item in blok.titleWithUnderline"
@@ -18,7 +19,7 @@
           class="max-w-xl mb-6 font-rubik text-white lg:mb-8 md:text-lg lg:text-xl"
         ></div>
         <StoryblokComponent
-          v-for="blok_item in blok.buttonTRS"
+          v-for="blok_item in blok.button"
           :key="blok_item._uid"
           :blok="blok_item"
         />

@@ -20,7 +20,7 @@
         >{{ blok.whatsappPhone.url }}</NuxtLink
       >
     </div>
-    <div class="flex space-x-4 2xl:pl-16">
+    <div class="flex space-x-4">
       <div v-for="icono in props.blok.iconsCenter">
         <NuxtLink
           :key="icono.icon._uid"
