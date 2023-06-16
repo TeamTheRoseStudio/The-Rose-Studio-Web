@@ -14,6 +14,13 @@ export default defineNuxtConfig({
         lang: "es",
       },
       link: [],
+      script: [
+        {
+          hid: "tawk.to",
+          src: "https://embed.tawk.to/64883f71cc26a871b02238fa/1h2q3fll0",
+          defer: true,
+        },
+      ],
     },
   },
   css: [
@@ -53,7 +60,7 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
     ],
   },
-//   plugins: [
-//     '~/plugins/calendly.client.js'
-// ]
+  //   plugins: [
+  //     '~/plugins/calendly.client.js'
+  // ]
 });

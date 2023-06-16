@@ -12,7 +12,7 @@
           >
             <div
               v-html="renderRichText(blok.title)"
-              class="leading-[50px] mb-1 lg:mb-4 inline-block text-3xl max-w-[300px] md:max-w-xl lg:min-w-[270px] font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white text-white"
+              class="leading-[50px] mb-[2px] lg:mb-4 inline-block text-3xl max-w-[300px] md:max-w-xl lg:min-w-[270px] font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white text-white"
             ></div>
             <h1
               class="xl:mr-0 mb-3 md:mb-0 lg:pt-2 xl:pt-3 text-3xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#F78888] to-[#F91616]"

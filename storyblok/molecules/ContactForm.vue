@@ -51,7 +51,10 @@
                 name="_autoresponse"
                 value="Gracias por contactar con The Rose Studio. En breve nos pondremos en contacto contigo."
               />
-              <input type="hidden" name="_next" value="https://localhost:3010/gracias" />
+              <input type="hidden" name="_next" value="https://therosestudio.es" />
+              <input type="hidden" name="_captcha" value="false">
+
+
               <!--TODO: Cambiar la pagina a done será redirigido-->
             </div>
             <label for="terms" class="ml-2 text-sm font-medium text-white/50"

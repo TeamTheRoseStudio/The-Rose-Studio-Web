@@ -1,7 +1,7 @@
 <template>
   <div
     
-    class="hidden lg:grid grid-cols-3 items-center place-items-center py-3"
+    class="hidden bg-black/50 lg:grid grid-cols-3 items-center place-items-center py-3"
   >
     <div class="flex space-x-4">
       <div>
