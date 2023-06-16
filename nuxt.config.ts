@@ -3,6 +3,10 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "The Rose Studio",
+      script: [{
+        src: "https://assets.calendly.com/assets/external/widget.js",
+        type: "text/javascript" 
+      }],
       meta: [
         {
           name: "description",
