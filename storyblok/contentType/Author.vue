@@ -37,6 +37,22 @@
   </div>
 </template>
 <script setup>
-defineProps({ blok: Object });
+const prop = defineProps({ blok: Object });
+
+// SEO and META
+useHead({
+  titleTemplate: `${prop.blok.name} | The Rose Studio 🌹`,
+});
+
+useSeoMeta({
+  description: prop.blok.metatags?.description,
+  og_description: prop.blok.metatags?.og_description,
+  og_image: prop.blok.metatags?.og_image,
+  og_title: prop.blok.metatags?.og_title,
+  title: prop.blok.metatags?.title,
+  twitter_description: prop.blok.metatags?.twitter_description,
+  twitter_image: prop.blok.metatags?.twitter_image,
+  twitter_title: prop.blok.metatags?.twitter_title,
+});
 </script>
 <style scoped></style>
